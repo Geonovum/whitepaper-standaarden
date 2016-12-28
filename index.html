@@ -2,27 +2,26 @@
 <html lang="nl">
   <head>
     <title>Whitepaper Standaarden</title>
+    <style>
+      body {font: 10pt verdana;}
+      .issue {background-color: yellow;}
+    </style>
   </head>
   <body>
-    <section id="abstract">
-      <p></p>
-    </section>
+    <h1>Whitepaper Standaarden</h1>
     <section id="intro">
-      <h2>Inleiding</h2>
-      <section>
-        <h2>...</h2>
-        <p>...</p>
-      </section>
+    <h2>Inleiding</h2>
+    <p>Langs de lijn van wat er op de pas toe leg uit lijst staat (en in het raamwerk) én de innovatieprojecten rond 3D, LD, Sensoren en het Web (en andere internationale ontwikkelingen) schetsen wat er de komende 5 jaar speelt / verandert. Op sommige punten kunnen we al aanbevelingen geven, op andere zijn er nog open vragen. </p>
       <section id="leeswijzer">
-        <h2>Leeswijzer</h2>
+        <h3>Leeswijzer</h3>
         <p>...</p>
       </section>
     </section>
-    <section id="...">
-      <h2>Tweede hoofdstuk</h2>
-      <p>...</p>
+    <section id="3D">
+      <h2>3D ontwikkelingen</h2>
+      <p>Er komt meer 3D data landelijk beschikbaar en het zal meer worden gebruikt. Misschien de 3D validator verder uitwerken. </p>
       <div class="issue" data-number="1">
-        <p>Voorbeeld issue</p>
+        <p>Op deze manier kunnen we open punten opnemen in de tekst: <a href="https://github.com/Geonovum/whitepaper-standaarden/issues/1">Voorbeeld issue</a></p>
       </div>
       <section id="xxx">
         <h3>Voorbeeld geneste sectie</h3>
@@ -38,6 +37,53 @@
           <li>...</li>
         </ol>
       </section>
+    </section>
+    <section id="linkeddata">
+      <h2>Linked Data</h2>
+      <p>linked data wordt belangrijk voor bijvoorbeeld het publiceren van overheidsdata – zo rijk mogelijk. En voor semantische interoperabiliteit (i.e. shared semantics).</p>
+    </section>
+    <section id="sensoren">
+      <h2>Sensoren</h2>
+      <p>Wordt zeker belangrijk de komende tijd. Sensor standaarden ontwikkelen zich nu in allerlei gremia. </p>
+    </section>
+    <section id="web">
+      <h2>Geo &amp; World Wide Web</h2>
+      <p>nieuwe publicatiedoelgroep. Naast SDI. Gebruik ook de visie van Peter Terhaar. </p>
+    </section>
+    <section id="sdi">
+      <h2>SDI nieuwe stijl</h2>
+      <p>We gooien de bestaande SDI niet overboord maar willen wel naar een set standaarden toe die lichter is en beter aansluit bij de praktijk op het web. </p>
+      <ul>
+        <li>ontwikkelingen bij OGC (waar gewerkt wordt aan lichtgewichtere, op JSON gebaseerde standaarden)</li>
+        <li>De platform gedachte. </li>
+        <li>Data on the Web aanbevelingen voor API's</li>
+        <li>Nieuwe stijl web services voor raster data</li>
+        <li>Inzichten uit Testbed en elders om op basis van SDI nieuwe kanalen aan te bieden incl convenience APIs en Linked Data</li>
+      </ul>
+    </section>
+    <section id="infomodellen">
+      <h2>Voorbij NEN3610</h2>
+      <p>nieuwe manier om informatiemodellen te ontwikkelen. Een Linked Data profiel op NEN3610. En over semantische harmonisatie: niet alle semantiek willen harmoniseren om het harmoniseren, maar gericht inzetten op specifieke gevallen waar harmonisatie wat oplevert, en hier tot op data/proces niveau gaan. Bv NWB/BGT.</p>      
+    </section>
+    <section id="uitwisselformaten">
+      <h2>Uitwisselformaten</h2>
+      <p>GML ontwikkelt zich niet meer verder. We gaan nadenken over andere standaarden voor uitwisseling. GeoJSON, Spatialite, Geopackage, Linked Data… Maar hier hebben we nog niet echt een antwoord.</p>
+    </section>
+    <section id="metadata">
+      <h2>Metadata</h2>
+      <p>Geo-DCAT (voor integratie portalen), schema.org (voor vindbaarheid op het web) aanbevelingen. En ook de vraag: hoeveel metadatavelden heb je nou echt nodig. Voor vindbaarheid: met name coverage. Voor beoordeling fit for purpose: nog een paar meer. </p>
+    </section>
+    <section id="visualisatie">
+      <h2>Visualisatie</h2>
+      <p>Op dit onderwerp hebben we niet zo veel.</p>
+    </section>
+    <section id="crs">
+      <h2>Coordinaatreferentiesystemen</h2>
+      <p>RD/ETRS ontwikkelingen (maar het ligt nu al 2 jaar stil, er is wel een probleem maar het wordt niet zo gevoeld). En aanbevelingen voor web. Conform de platformgedachte: bied je data ook in WGS84 aan. Voor veel soorten gebruik is de mindere nauwkeurigheid geen probleem en voor veel toepassingen is dit het handigste CRS. Verwijs ook naar Spatial Data on the Web Best Practice aanbevelingen.</p>
+    </section>
+    <section id="agile">
+      <h2>Agile standaarden ontwikkelen</h2>
+      <p>In kortere iteraties; publiceren wat je binnen een time box hebt gedaan; open ontwikkelen; tijdens ontwikkeltraject ook implementeren. Dit kan een referentie implementatie (serieuze code die de standaard implementeert en als voorbeeld gebruikt kan worden of zelfs in toepassingen) zijn of een voorbeeldbestand of een demo (om te laten zien maar geen voorbeeld implementatie). Het is de vraag hoever we hierin willen gaan. </p>
     </section>
   </body>
 </html>
