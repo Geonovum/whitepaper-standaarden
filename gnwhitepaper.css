@@ -1,0 +1,12 @@
+      body {font: 8pt verdana;
+            background-image: url("http://www.geonovum.nl/sites/all/themes/insiders/logo.png");
+            background-position: right top;
+            background-repeat: no-repeat;
+            margin: 24pt;}
+      h1 {font: 16pt;}
+      h2 {font: 14pt;}
+      h3 {font: 10pt;}
+      h4 {font: 8pt bold;}
+      .issue {background-color: yellow;}
+      .hfdinleiding {font-weight: bold;}
+      
