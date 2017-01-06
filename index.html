@@ -12,19 +12,74 @@
     <p class="hfdinleiding">Terugkijkend op tien jaar standaarden ontwikkelen en beheren, kunnen we vaststellen dat we in Nederland inmiddels een volwassen set standaarden kennen, die fungeert als de ruggegraat van de nationale spatial data infrastructure (SDI). Deze set standaarden is opgenomen op de Pas toe of leg uit-lijst van het Forum Standaardisatie. Deze set bevat het Basismodel Geo-informatie (NEN3610), het 'moedermodel' van veel informatiemodellen waarmee semantiek van datasets éénduidig wordt vastgelegd, en een aantal standaarden die vastleggen hoe we deze datasets kunnen uitwisselen (GML), ontsluiten (Nederlandse profielen op WMS en WFS) en vindbaar maken (Nederlandse metadataprofielen). Geonovum beheert de meeste van deze standaarden. </p>
       <p class="hfdinleiding">Hoewel de huidige SDI met datasets als de basisregistraties en voorzieningen als PDOK niet meer weg te denken is uit de dagelijkse praktijk van het geo-inforatiewerkveld, is een SDI nooit uitontwikkeld. Technologische ontwikkelingen volgen elkaar in hoog tempo op en de maatschappelijke vragen evolueren. Waar de SDI oorspronkelijk alleen op de geo-professional gericht was, verwachten we tegenwoordig dat de SDI toegankelijk wordt voor een veel bredere gebruikersgroep, waaronder de web-ontwikkelaars. Deze beoogde verbreding komt voort uit de toegenomen aandacht voor (her)bruikbaarheid van data, waar oorspronkelijk de focus meer lag op de ontsluiting zelf. In de toekomst verwachten we meer samenhang (en consistentie) tussen individuele datasets, meer detail in datasets (overgang van 2D naar 3D) en vormen van toegang tot data die aansluiten bij de gebruikerswensen van de veel bredere gebruikersgroep van de Nederlandse SDI. </p>
       <p class="hfdinleiding">De Nederlandse SDI kan alleen succesvol meegaan in deze ontwikkeling, wanneer de onderliggende set standaarden dit afdoende ondersteunt. Daarom stellen we ons in deze white paper de vraag of de huidige set standaarden nog volledig voldoet. In hoeverre zijn innovaties en ontwikkelingen zo volwassen geworden, dat ze weerslag hebben op de standaarden die we nu beheren? Langs de lijn van de geostandaarden die op de Pas toe leg uit-lijst staan, schetsen we welke updates van deze standaarden er de komende 5 jaar mogelijk gaan komen. Input hiervoor komt uit ontwikkelingen die Geonovum de afgelopen jaren heeft verkend en gevolgd in de innovatieplatforms rond 3D, LD, Sensoren en het Web en in internationale context. Op sommige punten kunnen we al aanbevelingen geven, op andere zijn er nog open vragen. </p>
-      <p>Meer tekst...</p>
       <section id="leeswijzer">
         <h3>Leeswijzer</h3>
         <p>...</p>
       </section>
     </section>
+    <section id="relevantetrends">
+      <h2>2.  Relevante trends</h2>
+      <p>...</p>
     <section id="3D">
-      <h2>3D ontwikkelingen</h2>
+      <h3>2.1  Meer 3D</h3>
       <p>Er komt meer 3D data landelijk beschikbaar en het zal meer worden gebruikt. Misschien de 3D validator verder uitwerken. </p>
-      <div class="issue" data-number="1">
-        <p>Op deze manier kunnen we open punten opnemen in de tekst: <a href="https://github.com/Geonovum/whitepaper-standaarden/issues/1">Voorbeeld issue</a></p>
-      </div>
-      <section id="xxx">
+    </section> 
+    <section id="linkeddata">
+      <h3>2.2 Meer linked data</h3>
+      <p>linked data wordt belangrijk voor bijvoorbeeld het publiceren van overheidsdata – zo rijk mogelijk. En voor semantische interoperabiliteit (i.e. shared semantics).</p>
+    </section> 
+    <section id="sensoren">
+      <h3>2.3 Meer sensoren</h3>
+      <p>Wordt zeker belangrijk de komende tijd. Sensor standaarden ontwikkelen zich nu in allerlei gremia.</p>
+    </section> 
+    <section id="web">
+      <h3>2.4 Meer gebruikers: Geo &amp; World Wide Web</h3>
+      <p>nieuwe publicatiedoelgroep. Naast SDI. Gebruik ook de visie van Peter Terhaar.</p>
+    </section> 
+    <section id="platform">
+      <h3>2.5 Meer kanalen: platformgedachte</h3>
+       <p>We gooien de bestaande SDI niet overboord maar willen wel naar een set standaarden toe die lichter is en beter aansluit bij de praktijk op het web. </p>
+      <ul>
+        <li>ontwikkelingen bij OGC (waar gewerkt wordt aan lichtgewichtere, op JSON gebaseerde standaarden)</li>
+        <li>De platform gedachte. </li>
+        <li>Data on the Web aanbevelingen voor API's</li>
+        <li>Nieuwe stijl web services voor raster data</li>
+        <li>Inzichten uit Testbed en elders om op basis van SDI nieuwe kanalen aan te bieden incl convenience APIs en Linked Data</li>
+      </ul>
+    </section> 
+  </section>
+  <section id="impactstandaarden">
+    <h2>3.  Impact op Pas toe of leg uit-standaarden</h2>
+    <p>...</p>
+      <section id="informatiemodellen">
+      <h3>3.1   Informatiemodel</h3>
+      <p>nieuwe manier om informatiemodellen te ontwikkelen. Een Linked Data profiel op NEN3610. En over semantische harmonisatie: niet alle semantiek willen harmoniseren om het harmoniseren, maar gericht inzetten op specifieke gevallen waar harmonisatie wat oplevert, en hier tot op data/proces niveau gaan. Bv NWB/BGT.</p>
+      </section>     
+      <section id="uitwisselformaat">
+      <h3>3.2   Uitwisselformaat</h3>
+      <p>GML ontwikkelt zich niet meer verder. We gaan nadenken over andere standaarden voor uitwisseling. GeoJSON, Spatialite, Geopackage, Linked Data… Maar hier hebben we nog niet echt een antwoord.</p>
+      </section> 
+      <section id="ontsluiting">
+      <h3>3.3   Ontsluiting / webservices</h3>
+      <p>Meer api naast services</p>
+      </section> 
+      <section id="vindbaarheid">
+      <h3>3.4 Vindbaarheid / metadata</h3>
+      <p>Geo-DCAT (voor integratie portalen), schema.org (voor vindbaarheid op het web) aanbevelingen. En ook de vraag: hoeveel metadatavelden heb je nou echt nodig. Voor vindbaarheid: met name coverage. Voor beoordeling fit for purpose: nog een paar meer.</p>
+      </section> 
+    </section>
+    <section id="impactwerkwijze">
+    <h2>4.  Impact op werkwijze rond standaardenontwikkeling</h2>
+    <p>In kortere iteraties; publiceren wat je binnen een time box hebt gedaan; open ontwikkelen; tijdens ontwikkeltraject ook implementeren. Dit kan een referentie implementatie (serieuze code die de standaard implementeert en als voorbeeld gebruikt kan worden of zelfs in toepassingen) zijn of een voorbeeldbestand of een demo (om te laten zien maar geen voorbeeld implementatie). Het is de vraag hoever we hierin willen gaan.</p>
+    </section>  
+    <section id="discussie">
+    <h2>5.  Discussie</h2>
+    <p>hier slimme dingen zeggen, samenvatten, zekerheden en onzekerheden duiden. vervolgonderzoek noemen</p>
+    </section>  
+  
+    
+    
+    <section id="xxx">
         <h3>Voorbeeld geneste sectie</h3>
         <p>...</p>
         <p>Voorbeeld lijst</p>
@@ -38,53 +93,9 @@
           <li>...</li>
         </ol>
       </section>
-    </section>
-    <section id="linkeddata">
-      <h2>Linked Data</h2>
-      <p>linked data wordt belangrijk voor bijvoorbeeld het publiceren van overheidsdata – zo rijk mogelijk. En voor semantische interoperabiliteit (i.e. shared semantics).</p>
-    </section>
-    <section id="sensoren">
-      <h2>Sensoren</h2>
-      <p>Wordt zeker belangrijk de komende tijd. Sensor standaarden ontwikkelen zich nu in allerlei gremia. </p>
-    </section>
-    <section id="web">
-      <h2>Geo &amp; World Wide Web</h2>
-      <p>nieuwe publicatiedoelgroep. Naast SDI. Gebruik ook de visie van Peter Terhaar. </p>
-    </section>
-    <section id="sdi">
-      <h2>SDI nieuwe stijl</h2>
-      <p>We gooien de bestaande SDI niet overboord maar willen wel naar een set standaarden toe die lichter is en beter aansluit bij de praktijk op het web. </p>
-      <ul>
-        <li>ontwikkelingen bij OGC (waar gewerkt wordt aan lichtgewichtere, op JSON gebaseerde standaarden)</li>
-        <li>De platform gedachte. </li>
-        <li>Data on the Web aanbevelingen voor API's</li>
-        <li>Nieuwe stijl web services voor raster data</li>
-        <li>Inzichten uit Testbed en elders om op basis van SDI nieuwe kanalen aan te bieden incl convenience APIs en Linked Data</li>
-      </ul>
-    </section>
-    <section id="infomodellen">
-      <h2>Voorbij NEN3610</h2>
-      <p>nieuwe manier om informatiemodellen te ontwikkelen. Een Linked Data profiel op NEN3610. En over semantische harmonisatie: niet alle semantiek willen harmoniseren om het harmoniseren, maar gericht inzetten op specifieke gevallen waar harmonisatie wat oplevert, en hier tot op data/proces niveau gaan. Bv NWB/BGT.</p>      
-    </section>
-    <section id="uitwisselformaten">
-      <h2>Uitwisselformaten</h2>
-      <p>GML ontwikkelt zich niet meer verder. We gaan nadenken over andere standaarden voor uitwisseling. GeoJSON, Spatialite, Geopackage, Linked Data… Maar hier hebben we nog niet echt een antwoord.</p>
-    </section>
-    <section id="metadata">
-      <h2>Metadata</h2>
-      <p>Geo-DCAT (voor integratie portalen), schema.org (voor vindbaarheid op het web) aanbevelingen. En ook de vraag: hoeveel metadatavelden heb je nou echt nodig. Voor vindbaarheid: met name coverage. Voor beoordeling fit for purpose: nog een paar meer. </p>
-    </section>
-    <section id="visualisatie">
-      <h2>Visualisatie</h2>
-      <p>Op dit onderwerp hebben we niet zo veel.</p>
-    </section>
-    <section id="crs">
-      <h2>Coordinaatreferentiesystemen</h2>
-      <p>RD/ETRS ontwikkelingen (maar het ligt nu al 2 jaar stil, er is wel een probleem maar het wordt niet zo gevoeld). En aanbevelingen voor web. Conform de platformgedachte: bied je data ook in WGS84 aan. Voor veel soorten gebruik is de mindere nauwkeurigheid geen probleem en voor veel toepassingen is dit het handigste CRS. Verwijs ook naar Spatial Data on the Web Best Practice aanbevelingen.</p>
-    </section>
-    <section id="agile">
-      <h2>Agile standaarden ontwikkelen</h2>
-      <p>In kortere iteraties; publiceren wat je binnen een time box hebt gedaan; open ontwikkelen; tijdens ontwikkeltraject ook implementeren. Dit kan een referentie implementatie (serieuze code die de standaard implementeert en als voorbeeld gebruikt kan worden of zelfs in toepassingen) zijn of een voorbeeldbestand of een demo (om te laten zien maar geen voorbeeld implementatie). Het is de vraag hoever we hierin willen gaan. </p>
+         <div class="issue" data-number="1">
+        <p>Op deze manier kunnen we open punten opnemen in de tekst: <a href="https://github.com/Geonovum/whitepaper-standaarden/issues/1">Voorbeeld issue</a></p>
+      </div>
     </section>
   </body>
 </html>
