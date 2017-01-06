@@ -26,7 +26,19 @@
     </section> 
     <section id="linkeddata">
       <h3>2.2 Meer linked data</h3>
-      <p>linked data wordt belangrijk voor bijvoorbeeld het publiceren van overheidsdata – zo rijk mogelijk. En voor semantische interoperabiliteit (i.e. shared semantics).</p>
+      <p>Samenvatting: linked data wordt belangrijk voor bijvoorbeeld het publiceren van overheidsdata – zo rijk mogelijk. En voor semantische interoperabiliteit (i.e. shared semantics).</p>
+      <p>In het <a href="http://www.pldn.nl">Platform Linked Data Nederland</a>, voorheen PiLOD, heeft Geonovum de afgelopen vier jaar samen met een actieve community onderzocht wat linked data is, hoe je het toepast, wat je eraan hebt, en hoe je geodata als linked data kunt publiceren en gebruiken. Ook het <a href="https://github.com/Geonovum/geo4web-testbed">#geo4web testbed</a> heeft inzichten hierover opgeleverd. Inmiddels hebben de eerste serieuze geo linked datasets het licht gezien, dankzij het Kadaster (<a href="https://brk.basisregistraties.overheid.nl">Kadastrale percelen (BRK)</a> en <a href="https://brt.basisregistraties.overheid.nl">Topografie (BRT)</a>).</p>
+      <p>[uitleg toevoegen waarom linked data belangrijk is voor overheidsdata. Gebruik presentatie van Erwin Folmer van 2 december.]</p>
+      <p>Er zal de komende vijf jaar veel (overheids) linked geodata gepubliceerd worden. Onder andere Ierland, Schotland, UK, Vlaanderen, Zwitserland en Finland hebben al linked geodata gepubliceerd of zijn hier mee bezig. </p>
+      <p>In 2017 schrijven we mee aan de <a href="https://www.w3.org/TR/sdw-bp/">W3C/OGC Spatial Data on the Web Best Practice</a>. Dit document gaat niet exclusief over Linked Data, maar bevat er wel veel aanbevelingen over uit de huidige praktijk. De Best Practice verzint geen nieuwe dingen, maar beveelt goede praktijken aan die op het web al te vinden zijn. Het kan als leidraad dienen voor het publiceren van linked geo data in Nederland.</p>
+      <p>Op een aantal punten is er volgens de Best Practice nog geen duidelijke, goede praktijk te ontwaren. Hier moet de komende jaren nog aan gewerkt worden: </p>
+      <ul>
+        <li>Er zijn nu meerdere linked data vocabulaires voor geodata. De Best Practice geeft handvaten om hier een keuze uit te maken, maar de killer vocabulaire moet er nog komen. Waarschijnlijk wordt er bij de OGC gewerkt aan een nieuwe <em>spatial ontology</em> als opvolger voor de nu bestaande ontologie uit <a href="http://www.opengeospatial.org/standards/geosparql">GeoSPARQL</a>. </li>
+        <li>Linked geodata in een triple store opslaan en dan ruimtelijke zoekvragen stellen? Dat leidt nu nog tot teleurstellingen. Enkele triple stores kunnen dit wel, maar de performance is teleurstellend. In het #geo4web testbed is hier onderzoek naar gedaan en ook Kadaster heeft ervaring met dit probleem. Hoewel Geonovum niet de aangewezen partij is om hier een oplossing voor te vinden, is het wel een praktisch probleem dat aandacht moet krijgen.</li>
+        <li><span class="issue">[dit past beter in het Geo op het web stuk] </span>Voor geo-metadata op het web wordt er in OGC verband gewerkt aan het standaardiseren van Geo-DCAT-AP, een geo-profiel op DCAT, een linked data vocabulaire waarmee je dataset metadata kunt beschrijven voor portalen. Maar ook een geo-update van schema.org zou een goed idee zijn. Deze vocabulaire wordt gebruikt om machine-leesbare semantiek toe te voegen aan data op het web en wordt begrepen door zoekmachines. schema.org bevat semantiek voor geo, maar deze kan hier en daar nog wel verbeterd worden. </li>
+      </ul>
+      <p>Linked data blijft naar onze verwachting ook de komende jaren wel enigszins een niche technologie. Voor het merendeel van de web developers blijft het te complex. Het blijft echter toch relevant, omdat het de meest rijke en krachtige manier is om data beschikbaar te stellen. In de context van open data is dat belangrijk. Daarnaast kan de data, ofwel door de data-eigenaar zelf, of door derden, op meer gangbare manieren beschikbaar gesteld worden. Dit kan overigens nog steeds "linked data" zijn, zonder dat het "Linked Data" is: wél elk object op het web met een eigen URI en links tussen de objecten; maar niet per sé met RDF, triple stores en SPARQL endpoints.  </p>
+      <p>In het verlengde van linked data ligt het semantic web. Langzaam maar zeker werken we hier naar toe. We denken daarbij aan "shared semantics" oftewel semantische harmonisatie. Zonder de hele geowereld te willen harmoniseren, want dit zou een enorme klus zijn waarvan het praktisch nut niet vaststaat. Wel blijven we gericht, daar waar semantische harmonisatie leidt tot nieuwe mogelijkheden om data te hergebruiken en processen te optimaliseren, linked data principes toepassen om te komen tot een web van data waarin niet langer overbodig data gekopieerd wordt.</p>
     </section> 
     <section id="sensoren">
       <h3>2.3 Meer sensoren</h3>
@@ -96,6 +108,5 @@
          <div class="issue" data-number="1">
         <p>Op deze manier kunnen we open punten opnemen in de tekst: <a href="https://github.com/Geonovum/whitepaper-standaarden/issues/1">Voorbeeld issue</a></p>
       </div>
-    </section>
   </body>
 </html>
