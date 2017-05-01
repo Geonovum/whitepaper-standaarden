@@ -32,6 +32,9 @@
       <p>Status van het document.</p>
     </section>
     <section>
+               <div class="note">
+      <p>Tijdens de consultatie vragen we reacties op deze hele white paper, maar bij een aantal issues zijn we expliciet op zoek naar de mening van het werkveld. Deze issues zijn als Issue gemarkeerd in deze white paper. </p>
+    </div>
       <h2>Inleiding</h2>
       <p>Terugkijkend op tien jaar standaarden ontwikkelen en beheren, kunnen we vaststellen dat we in Nederland inmiddels een volwassen set standaarden kennen, die fungeert als de ruggengraat van de nationale spatial data infrastructure (SDI). Deze set standaarden is opgenomen op de Pas toe of leg uit-lijst van het Forum Standaardisatie. Geonovum beheert -als hoeder van deze ruggengraat- deze set en is van de meeste afzonderlijke standaarden ook de beheerder. De set geostandaarden set bevat het Basismodel Geo-informatie (NEN3610), het 'moedermodel' van veel informatiemodellen waarmee semantiek van datasets éénduidig wordt vastgelegd, en een aantal standaarden die vastleggen hoe we deze datasets kunnen uitwisselen (GML), ontsluiten (Nederlandse profielen op WMS en WFS) en vindbaar maken (Nederlandse metadataprofielen).</p>
       <p>Hoewel de huidige SDI met datasets als de basisregistraties en voorzieningen als PDOK niet meer weg te denken is uit de dagelijkse praktijk van het geo-inforatiewerkveld, is een SDI nooit uitontwikkeld. Technologische ontwikkelingen volgen elkaar in hoog tempo op en de maatschappelijke vragen evolueren. Waar de SDI oorspronkelijk alleen op de geo-professional gericht was, verwachten we tegenwoordig dat de SDI toegankelijk wordt voor een veel bredere gebruikersgroep, waaronder de web-ontwikkelaars. Deze beoogde verbreding komt voort uit de toegenomen aandacht voor (her)bruikbaarheid van data, waar oorspronkelijk de focus meer lag op de ontsluiting zelf. Deze verschoven focus zien we nu ook onder de noemer 'van open data naar FAIR data', een concept oorspronkelijk bedacht voor wetenschappelijke (onderzoeks)data. Essentie hiervan: data dient niet alleen open te zijn, maar ook vindbaar, toegankelijk, interoperabel en herbruikbaar. <br><img src="https://www.dtls.nl/wp-content/uploads/2015/11/Schermafbeelding-2016-04-01-om-14.22.46.png" height="250"><br> In de toekomst verwachten we meer samenhang (en consistentie) tussen individuele datasets, meer detail in datasets (overgang van 2D naar 3D) en vormen van toegang tot data die aansluiten bij de gebruikerswensen van de veel bredere gebruikersgroep van de Nederlandse SDI.   </p>
@@ -42,9 +45,7 @@
            <div class="issue">
       <p>De scope van de huidige set geostandaarden lijkt impliciet beperkt tot vectordata. In hoeverre moet deze scope verbreed worden naar andere typen data, zoals raster / voxel data en pointcloud data, zowel qua scope van de set geostandaarden als van deze white paper? <a href="https://github.com/Geonovum/whitepaper-standaarden/issues/4">Scope issue</a></p>
     </div>
-         <div class="note">
-      <p>De scope van de huidige set geostandaarden lijkt impliciet beperkt tot vectordata. In hoeverre moet deze scope verbreed worden naar andere typen data, zoals raster / voxel data en pointcloud data, zowel qua scope van de set geostandaarden als van deze white paper? </p>
-    </div>
+
       </section>
     </section>
     <section id="relevantetrends">
@@ -99,23 +100,12 @@
       <section id="informatiemodellen">
         <h3>Informatiemodel</h3>
         <p>NEN3610 fungeert niet alleen als moedermodel voor alle sectorale informatiemodellen, maar vormt ook een werkwijze voor het stelsel van sectorale informatiemodellen. Op beide aspecten zal NEN3610 zich de komende jaren verder ontwikkelen. Met de opkomst van Linked Data zien we dat steeds meer sectorale datasets 'verlinkt' worden. Op dit moment gebeurt dit op het niveau van individuele informatiemodellen. Het risico hiervan is dat we de samenhang, die nu bestaat tussen de verschillende informatiemodellen in de UML-wereld, verliezen in de Linked Data wereld. Daarom ontstaat de behoefte aan een Linked Data-profiel op NEN3610. Een dergelijk profiel zou alle begrippen moeten vastleggen in SKOS (Simple Knowlegde Organization System - W3C standaard, staat ook op de Pas toe of leg uit-lijst), de klassen en eigenschappen vastleggen in OWL (Web Ontology Language - W3C standaard), een set aanvullende modelleerrichtlijnen vastleggen en relaties specificeren met andere, gangbare vocabulaires. Met dit profiel geven we niet alleen richting aan het 'verlinken' van afzonderlijke informatiemodellen, maar bieden we ook meer context door de begrippen zoveel mogelijk te relateren aan breed gebruikte vocabulaires, zoals schema.org. Met beiden beogen we de 'linkbaarheid' van gegevens in de Nederlandse SDI zo groot mogelijk te maken, omdat dit zowel het gebruik (door betere vindbaarheid) als de bruikbaarheid (door beter begrip van de betekenis) vergroot.</p>
-        <p>Vanuit Linked Data-perspectief is het beter vastleggen van relaties tussen begrippen een aandachtspunt voor de komende jaren, maar dit is zeker niet de enige drijfveer hiervoor. We zien dat met het verder volwassen worden van de SDI het aanbod aan datasets steeds verder toeneemt. En deze verschillende datasets bevatten ook steeds vaker gegevens over (schijnbaar) dezelfde objecten. Neem bijvoorbeeld wegen: steeds vaker wordt de vraag gesteld waarom de populaties van het NWB (Nationaal Wegenbestand), BGT (Basisregistratie Grootschalige Topografie) en BAG (Basisregistratie Adressen en Gebouwen) nu eigenlijk van elkaar verschillen. Voor XXXXXXXXX
-          
-          
-          
-          wordt niet alleen belangrijker vanuit de drijfveer Linked Data, maar is ook een antwoord op d. , maar ook 
-          en vindbaarheid
-          
-          
-o	Moet ook vastgesteld worden. 
+        <p>Vanuit Linked Data-perspectief is het beter vastleggen van relaties tussen begrippen een aandachtspunt voor de komende jaren, maar dit is zeker niet de enige drijfveer hiervoor. We zien dat met het verder volwassen worden van de SDI het aanbod aan datasets steeds verder toeneemt. En deze verschillende datasets bevatten ook steeds vaker gegevens over (schijnbaar) dezelfde objecten. Neem bijvoorbeeld wegen: steeds vaker wordt de vraag gesteld waarom de populaties van het NWB (Nationaal Wegenbestand), BGT (Basisregistratie Grootschalige Topografie) en BAG (Basisregistratie Adressen en Gebouwen) nu eigenlijk van elkaar verschillen. Experts uit het geodomein zijn vaak vertrouwd met dergelijke verschillen en kennen veelal de oorzaken, maar met het steeds bredere gebruik buiten het traditionele werkveld, neemt het aantal gebruikers dat dergelijke verschillen niet kan duiden steeds verder toe. Om hier mee om te kunnen gaan, is het noodzakelijk om inzicht te kijrgen in de onderlinge relaties. Soms zal inzicht in de onderlinge relatie leiden tot begrip (bijvoorbeeld verschillende definities, die elk gerechtvaardigd zijn binnen hun eigen context), in andere gevallen kan dit reden zijn om bepaalde datasets te gaan harmoniseren. De definities van en onderlinge relaties tussen begrippen dienen centraal in conceptenregisters ontsloten te worden.  
+  
 o	Open vraag is nog of NEN3610 expliciet de open world assumption zou moeten gaan hanteren. (als issue opnemen)
           
           
-          
--	Semantiek valt hier onder. 
--	NEN3610 is meer dan 1 document; het is een werkwijze voor het stelsel van sectorale informatiemodellen. NEN3610 vervult in de SDI de rol van het basismodel waaraan alle sectorale informatiemodellen zich moeten conformeren. Hiermee is dus in scope dat we het in de whitepaper ook hebben over het toegankelijk maken van de semantiek van al die informatiemodellen (via het conceptenregister). 
--	In de SDI komen allerlei datasets beschikbaar, het komt dan ook voor dat er verschillende datasets zijn met schijnbaar dezelfde gegevens. We hebben inzicht nodig in alle onderlinge relaties en dat kan reden zijn om bepaalde objecten/bronnen te gaan harmoniseren. (geen uber model van alles maar wel harmoniseren waar dat nodig is)
--	</p>
+	</p>
 
       </section>     
       <section id="uitwisselformaat">
