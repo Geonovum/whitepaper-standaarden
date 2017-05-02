@@ -32,7 +32,7 @@
       <p>Status van het document.</p>
     </section>
 	   <div class="note">
-      <p>Tijdens de consultatie vragen we reacties op deze hele white paper, maar bij een aantal issues zijn we expliciet op zoek naar de mening van het werkveld. Deze issues zijn als Issue gemarkeerd in deze white paper. </p>
+      <p>Tijdens de consultatie vragen we reacties op deze hele white paper, maar op een aantal punten aantal issues zijn we expliciet op zoek naar de mening van het werkveld. Deze punten zijn als Issue gemarkeerd in deze white paper. </p>
     </div>
     <section>
               
@@ -104,18 +104,24 @@
 	         <div class="issue">
       <p>Op het semantisch web is het gebruikelijk om uit te gaan van de 'open world assumption'. Is het wenselijk / noodzakelijk om dit als uitgangspunt bij NEN3610 in te brengen, of is het wenselijker om uit te blijven gaan van de closed world assumption?<a href="https://github.com/Geonovum/whitepaper-standaarden/issues/5">Open world assumption</a></p>
     </div>
-        <p>Vanuit Linked Data-perspectief is het beter vastleggen van relaties tussen begrippen een aandachtspunt voor de komende jaren, maar dit is zeker niet de enige drijfveer hiervoor. We zien dat met het verder volwassen worden van de SDI het aanbod aan datasets steeds verder toeneemt. En deze verschillende datasets bevatten ook steeds vaker gegevens over (schijnbaar) dezelfde objecten. Neem bijvoorbeeld wegen: steeds vaker wordt de vraag gesteld waarom de populaties van het NWB (Nationaal Wegenbestand), BGT (Basisregistratie Grootschalige Topografie) en BAG (Basisregistratie Adressen en Gebouwen) nu eigenlijk van elkaar verschillen. Experts uit het geodomein zijn vaak vertrouwd met dergelijke verschillen en kennen veelal de oorzaken, maar met het steeds bredere gebruik buiten het traditionele werkveld, neemt het aantal gebruikers dat dergelijke verschillen niet kan duiden steeds verder toe. Om hier mee om te kunnen gaan, is het noodzakelijk om inzicht te kijrgen in de onderlinge relaties. Soms zal inzicht in de onderlinge relatie leiden tot begrip (bijvoorbeeld verschillende definities, die elk gerechtvaardigd zijn binnen hun eigen context), in andere gevallen kan dit reden zijn om bepaalde datasets te gaan harmoniseren. De definities van en onderlinge relaties tussen begrippen dienen centraal in conceptenregisters ontsloten te worden.  
-  
-o	Open vraag is nog of NEN3610 expliciet de open world assumption zou moeten gaan hanteren. (als issue opnemen)
-          
-          
+        <p>Vanuit Linked Data-perspectief is het beter vastleggen van relaties tussen begrippen een aandachtspunt voor de komende jaren, maar dit is zeker niet de enige drijfveer hiervoor. We zien dat met het verder volwassen worden van de SDI het aanbod aan datasets steeds verder toeneemt. En deze verschillende datasets bevatten ook steeds vaker gegevens over (schijnbaar) dezelfde objecten. Neem bijvoorbeeld wegen: steeds vaker wordt de vraag gesteld waarom de populaties van het NWB (Nationaal Wegenbestand), BGT (Basisregistratie Grootschalige Topografie) en BAG (Basisregistratie Adressen en Gebouwen) nu eigenlijk van elkaar verschillen. Experts uit het geodomein zijn vaak vertrouwd met dergelijke verschillen en kennen veelal de oorzaken, maar met het steeds bredere gebruik buiten het traditionele werkveld, neemt het aantal gebruikers dat dergelijke verschillen niet kan duiden steeds verder toe. Om hier mee om te kunnen gaan, is het noodzakelijk om inzicht te kijrgen in de onderlinge relaties. Soms zal inzicht in de onderlinge relatie leiden tot begrip (bijvoorbeeld verschillende definities, die elk gerechtvaardigd zijn binnen hun eigen context), in andere gevallen kan dit reden zijn om bepaalde datasets te gaan harmoniseren. De definities van en onderlinge relaties tussen begrippen dienen centraal in conceptenregisters ontsloten te worden. 
 	</p>
-
       </section>     
       <section id="uitwisselformaat">
         <h3>Uitwisselformaat</h3>
-        <p>GML ontwikkelt zich niet meer verder. We gaan nadenken over andere standaarden voor uitwisseling. GeoJSON, Spatialite, Geopackage, Linked Data… Maar hier hebben we nog niet echt een antwoord.</p>
-      </section> 
+        <p>De Geography Markup Language (GML) staat als uitwisselformaat op de Pas toe of leg uit-lijst. GML wordt echter breder gebruikt binnen de SDI, bijvoorbeeld ook als formaat waarin een Web Feature Service (WFS) data terug kan geven. Uitspraken over toekomstige ontwikkelingen rond uitwisselstandaarden gelden daarom niet automatisch voor alle toepassingen van GML. Voordat we dergelijke uitspraken doen, is het goed om eerst de eisen die we vanuit de geosector stellen aan een uitwisselstandaard op een rij te zetten:</p>
+		<ul>
+			<li>Ondersteuning van de geometrietypen uit het Simple Feature profile, aangevuld met cirkelbogen
+			<li>Ondersteuning van verschillende relevante coördinaatsystemen
+			<li>Ondersteuning van 3D geo-informatie
+			<li>Ondersteuning voor het vastleggen van de in een informatiemodel gedefinieerde structuur in een schema
+	      </ul>
+	      <p>
+GML is nog steeds de enige open standaard die aan al deze criteria voldoet. Lichtere uitwisselstandaarden, waaronder GeoJSON, voldoen niet aan al deze criteria. GeoJSON gebruikt bijvoorbeel alleen WGS'84 als coordinaatsysteem en ondersteunt niet alle geometrietypen (en sluit het uitbreiden met extra typen expliciet uit). Dit leidt ertoe dat de positie van GML als uitwisselformaat (bijvoorbeeld tussen bronhouders en landelijke voorzieningen) niet ter discussie staat. Daar waar lichtere formaten als mogelijke alternatieven worden genoemd, heeft dit eerder betrekking op het gebruik van GML bij ontsluiting van de data. Met de opkomst van 3D geo-informatie zou het overigens goed denkbaar zijn dat CityGML (als specifieke 3D aanscherping / uitbreiding op GML) toegevoegd zal worden aan de set geostandaarden op de Pas toe of leg uit-lijst. 
+	      </p>
+	      <p>Op de wat langere termijn zal het voorgaande statement over de positie van GML zijn geldigheid kunnen verliezen. Immers, met de opkomst van linked data is er geen strikte scheiding meer tussen het informatiemodel (de semantiek) en het uitwisselformaat (in de zin van het schema, waarmee de implementatie van een informatiemodel wordt vastgelegd). Met OWL (Web Ontology Language) leg je in de linked data wereld eigenlijk zowel het informatiemodel als het schema vast. Overigens is de term 'uitwisselen' sowieso niet langer van toepassing, omdat bij linked data data niet uitgewisseld (gekopieerd) wordt, maar je toegang krijgt tot data die beschikbaar is op het web.
+	      </p>
+	     </section> 
       <section id="ontsluiting">
         <h3>Ontsluiting / webservices</h3>
         <p>Meer api naast services</p>
