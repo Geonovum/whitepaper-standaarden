@@ -1,6 +1,7 @@
    var respecConfig = {
       specStatus: "GN-BASIS",
       specType: "IM",
+      pubDomain: "etc",
       publishDate: "2017-05-31",
       editors: [{
         name: "Friso Penninga",
