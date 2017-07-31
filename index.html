@@ -110,6 +110,10 @@
           schaalniveau vergelijkbaar met de BGT. De Nederlandse SDI zal
           dergelijke modellen aan moeten kunnen.</p>
       </section>
+            <section id="sensoren">
+        <h3>Meer sensoren</h3>
+        <p>Het gebruik van sensoren in de openbare ruimte neemt een enorme vlucht. Zo spreken de toepassingen voor openbare orde en veiligheid in het Living Lab Stratumseind tot de verbeelding, maar zien we ook tal van toepassingen op milieugebied (o.a. rond het meten van luchtkwaliteit), bereikbaarheid (o.a. rond doorstroming en beschikbare parkeerplekken) en de zelfrijdende auto. Veel toepassingen komen tot stand binnen Smart City-initiatieven of experimenten rond het Internet of Things. Met deze enorme groei in toepassingen, neemt ook het aantal standaardisatie-initiatieven snel toe. Internationale organisaties als OGC, W3C en IEEE werken allen aan standaarden op dit vlak. Deze standaarden richten zich zowel op het vastleggen van gegevens over sensoren als op het ontsluiten van door de sensoren ingewonnen gegevens. Hoewel het INSPIRE framework voorziet in standaarden voor het ontsluiten van sensordata, zijn er nog nauwelijks concrete toepassingen op dit vlak. In vergelijking met trends als meer 3D en meer linked data, is de sensortrend nog nieuwer en minder volwassen. Een ontwikkeling die wel duidelijk zichtbaar is en als voorloper van de doorbraak van sensoren gezien kan worden, is het groeiende belang van data uit de categorie Observations and measurements. Door technologische ontwikkelingen rond inwintechnieken groeit het aanbod van coverages, bijvoorbeeld rond hoogte (denk AHN) en diepte (bathymetrie). Deze groei zien we in domeinen als hydrografie, meteorologie en de ondergrond. Een andere tendens die we zien rond sensoren is de trend naar lichtere standaarden, mede met het oog op het minimaliseren van dataverkeer (wat zeker bij LoRa van groot belang is) en het maximaliseren van batterijduur van bepaalde sensoren.</p>
+      </section>
       <section id="linkeddata">
         <h3>Meer linked data</h3>
         <p></p>
@@ -161,11 +165,7 @@
         mogelijkheden om data te hergebruiken en processen te optimaliseren,
         linked data principes toepassen om te komen tot een Web van data waarin
         niet langer overbodig data gekopieerd wordt. </section>
-      <section id="sensoren">
-        <h3>Meer sensoren</h3>
-        <p>Het gebruik van sensoren in de openbare ruimte neemt een enorme vlucht. Zo spreken de toepassingen voor openbare orde en veiligheid in het Living Lab Stratumseind tot de verbeelding, maar zien we ook tal van toepassingen op milieugebied (o.a. rond het meten van luchtkwaliteit), bereikbaarheid (o.a. rond doorstroming en beschikbare parkeerplekken) en de zelfrijdende auto. Veel toepassingen komen tot stand binnen Smart City-initiatieven of experimenten rond het Internet of Things. Met deze enorme groei in toepassingen, neemt ook het aantal standaardisatie-initiatieven snel toe. Internationale organisaties als OGC, W3C en IEEE werken allen aan standaarden op dit vlak. Deze standaarden richten zich zowel op het vastleggen van gegevens over sensoren als op het ontsluiten van door de sensoren ingewonnen gegevens. Hoewel het INSPIRE framework voorziet in standaarden voor het ontsluiten van sensordata, zijn er nog nauwelijks concrete toepassingen op dit vlak. In vergelijking met trends als meer 3D en meer linked data, is de sensortrend nog nieuwer en minder volwassen. Wel is een trend te zien naar lichtere standaarden, mede met het oog op het minimaliseren van dataverkeer (wat zeker bij LoRa van groot belang is) en het maximaliseren van batterijduur van bepaalde sensoren.</p>
-      </section>
-      <section id="web">
+        <section id="web">
         <h3>Meer gebruikers: Geo &amp; World Wide Web</h3>
         <p>Via de Nederlandse SDI wordt een schat aan geo-informatie ontsloten,
           die voor het overgrote deel als open data wordt aangeboden. Toch
@@ -258,12 +258,7 @@
           zo groot mogelijk te maken, omdat dit zowel het gebruik (door betere
           vindbaarheid) als de bruikbaarheid (door beter begrip van de
           betekenis) vergroot.</p>
-        <div class="issue" data-number="5">
-          <p>Op het semantisch web is het gebruikelijk om uit te gaan van de
-            'open world assumption'. Is het wenselijk / noodzakelijk om dit als
-            uitgangspunt bij NEN3610 in te brengen, of is het wenselijker om uit
-            te blijven gaan van de closed world assumption?</p>
-        </div>
+        <p>Op het semantisch web is het gebruikelijk om uit te gaan van de 'open world assumption', waarmee de linkbaarheid maximaal is. Dat rechtvaardigt de vraag of het niet wenselijk -of wellicht zelfs noodzakelijk- is om dit als uitgangspunt bij NEN3610 in te brengen. We kiezen er nu echter bewust voor om dat niet te doen en daarmee uit te blijven gaan van de closed world assumption van NEN3610. De belangrijkste overweging hierbij is dat de closed world assumption validatie mogelijk maakt. En omdat juist in een SDI betrouwbare en juiste overheidsdata centraal staat, is valideren een must. Daarom kiezen we er voor om NEN3610 zelf intact te laten en met een Linked Data-profiel de linkbaarheid te vergroten. Hiertoe geven we bijvoorbeeld handreikingen over hoe dit te realiseren is, bijvoorbeeld door de keuze voor het juiste semantische level of detail. Neem bijvoorbeeld de BAG: die kent het object Openbare Ruimte. De kans dat 'willekeurige' gebruikers van buiten de BAG-conext relevante data willen linken aan openbare ruimten is klein, terwijl die kans bij de  verschillende typen Openbare Ruimte (o.a. Weg, Water en Spoorbaan) een stuk groter is. Door Weg als object te nemen (i.p.v. het generiekere Openbare Ruimte), vergroot je de linkbaarheid.</p>
         <p>Vanuit Linked Data-perspectief is het beter vastleggen van relaties
           tussen begrippen een aandachtspunt voor de komende jaren, maar dit is
           zeker niet de enige drijfveer hiervoor. We zien dat met het verder
@@ -330,6 +325,8 @@
           'uitwisselen' sowieso niet langer van toepassing, omdat bij linked
           data data niet uitgewisseld (gekopieerd) wordt, maar je toegang krijgt
           tot data die beschikbaar is op het web. </p>
+          <p>Hoewel de scope van de set geostandaarden nergens expliciet beperkt is tot standaarden gericht op vectordata, is GML wel specifiek op vectordata gericht. Met de opkomst van coverages (o.a. pointclouds en rasters) vanuit de hoek van Observations and measurements, is duidelijk dat GML niet voor alle typen data van toepassing is. Andere uitwisselformaten zijn dan meer voor de hand liggend. Op deze terreinen kiest Geonovum er voor om -in navolging van het OGC- uitwisselstandaarden voor coverages niet zelf te ontwikkelen of actief voor te schrijven, maar de community standards die in de desbetreffende domeinen ontstaan (bijv. LAS/LAZ voor pointclouds) te adopteren. Daarnaast streeft Geonovum naar goede ondersteuning binnen de Nederlandse SDI van dergelijke data. Toepassingen binnen bijvoorbeeld INSPIRE kunnen meer inzicht geven in eventuele knelpunten en behoefte aan verdere standaardisatie. De keuze om de focus voorlopig te richten op (sensor)data die in de Nederlandse SDI komt (d.w.z. voornamelijk op gevalideerde, voor hergebruik bedoelde en door de overheid van een 'kwaliteitsstempel' voorziene data en minder op ruwe data uit individuele sensoren), sluit aan bij de afbakening van de huidige standaarden. Neem de BGT als use case: we standaardiseren niet de inwinning(smethode) of ruwe metingen, maar alleen de resulterende dataset. 
+          </p>
       </section>
       <section id="ontsluiting">
         <h3>Ontsluiting</h3>
@@ -345,26 +342,13 @@
           aan de globale locaties van oplaadpalen in een zo licht mogelijk
           formaat, zodat zijn app optimaal presteert. </p>
         <p>Een categorie ontsluitingen die sterk in populariteit zal toenemen,
-          wordt gevormd door de REST API's. REST API's verkleinen de hoeveelheid
-          werk die een gebruiker (vaak een ontwikkelaar) moet verzetten om data
-          daadwerkelijk binnen te krijgen, doordat REST API's geen
-          service-specifieke bevragingen kennen, maar gebruik maken van het HTTP
-          protocol. Om bijvoorbeeld een WFS te bevragen, zal een ontwikkelaar
+          wordt gevormd door de REST convenience API's. REST convenience API's vereenvoudigen
+          bevragingen (doordat ze gebruik maken van generieke protocollen als HTTP i.p.v. specifieke querytalen als bij bijv. WFS) zijn  veel meer <i>fit for purpose</i>: kleine
+          'convenience API's' geven voor een specifiek doel precies de gewenste
+          data terug (i.p.v. generieke API's waarmee je elke
+          mogelijke vraag zou kunnen stellen). Dit sluit aan bij de specifieke vragen die gebruikers stellen: vrijwel niemand vraagt om 'de BGT', maar men wil bomen, parkeervakken of lichtmasten. Een belangrijk voordeel van REST convenience API's is dat incidentele gebruikers als (web)ontwikkelaars zich niet hoeven verdiepen in specifieke bevragingsmechanismen. Om bijvoorbeeld een WFS te bevragen, zal een ontwikkelaar
           moeten snappen hoe een request opgebouwd moet worden, om succesvol
-          data te verkrijgen. Dit vereist kennis (de ontwikkelaar dient de
-          relevante (geo)standaard te begrijpen) en een implementatie-inspanning
-          (om de standaard aan client-zijde te implementeren). Voor een
-          ontwikkelaar die vertrouwd is met het geodomein vormt dit een drempel,
-          voor ontwikkelaars van buiten het domein zal dit vaak een horde vormen
-          die men niet kan of wil nemen. REST API's vereenvoudigen
-          dataontsluiting niet alleen, maar zullen data vaak ook in lichtere
-          formaten teruggeven en veel meer <i>fit for purpose</i> zijn: kleine
-          'convenience API's' die voor een specifiek doel precies de gewenste
-          data teruggeven, in plaats van grote, generieke API's waarmee je elke
-          mogelijke vraag zou kunnen stellen aan een dataset. Dit voorziet ook
-          in de specifieke vragen die veel gebruikers stellen: lang niet
-          iedereen wil 'de BGT', maar men wil bomen, parkeervakken of
-          lichtmasten.</p>
+          data te verkrijgen. Je zou een WFS in relatie tot een REST convenience API kunnen omschrijven als een generieke XML-based API. Twee aspecten zijn in dit verschil van belang: het informatievraag-specifieke van een convenience API ten opzichte van het generieke ('alle vragen zijn mogelijk') van WFS en REST (gebruik maken van generieke protocollen voor bevragingen) ten opzichte van de specifieke op XML-gebaseerde queries die je aan een WFS kunt stellen. Merk op dat een WFS ook als API beschouwd kan worden: hoewel in het dagelijks spraakgebruik nog wel eens gesproken wordt over 'API's vs. services', is dit niet correct. Want zowel een REST API als een Web Feature Service bieden een specificatie waarmee machines met elkaar kunnen communiceren en data uitwisselen. </p>
         <p>De vraag is nu in hoeverre de opkomst van REST API's vraagt om
           uitbreiding van de huidige set geostandaarden op de Pas toe of leg
           uit-lijst. Voor zover het gaat om internationale, generieke
@@ -382,35 +366,13 @@
           bevat niet alleen internationale standaarden, maar ook een aantal
           Nederlandse profielen waarin dergelijke standaarden worden
           aangescherpt (de set bevat Nederlandse profielen voor WFS, WMS en
-          metadata van datasets en services). Op dat niveau zou de opkomst van
-          REST API's mogelijk wel om aanpassing van de set Geostandaarden
-          vragen. </p>
-        <div class="issue" data-number="6">
-          <p>In concepten van API-strategieën zien we aanvullende eisen voor het
-            omgaan met geometrie. Voorbeelden hiervan zijn het voorschrijven van
-            GeoJSON als formaat en methoden om met verschillende
-            coördinaatsystemen om te gaan (iets wat niet standaard door GeoJSON
-            wordt ondersteund). Heeft Nederland er baat bij wanneer dergelijke
-            geo-aspecten uniform worden voorgeschreven in een Nederlands profiel
-            voor geo in REST API's?</p>
-        </div>
-        <p>Wat betekent de opkomst van de REST API's voor de huidige OGC
+          metadata van datasets en services). Op dat niveau zou men aan profielen voor REST API's kunnen denken, maar dat lijkt op dit moment te knellend. REST is een architectuur patroon en geen standaard en vraagt een andere aanpak bij het standaardiseren dan bekende uitwisselstandaarden van OGC of de overheid (StUF, Digikoppeling). Je kan bij het toepassen van het REST architectuur patroon een aantal zaken volledig standaardiseren, voor andere zaken is een best practice of een aantal ontwerp-overwegingen afdoende. Het resultaat van het toepassen is een REST API. Hoe hiermee om te gaan leg je vast in een API strategie. Het is niet een geval van "one size fits all", de API strategie zal dus niet alles in beton gieten maar de gebruiker ervan de vrijheid geven om een voor zijn situatie passende oplossing neer te zetten. Er lijkt behoefte te bestaan aan een generieke API-strategie voor de overheid, waarin zowel op strategisch als technisch niveau een aantal aanbevelingen gedaan kan worden (bijv. met betrekking tot RESTful principes, beveiliing, geo-aspecten en documentatie).           
+       </p>
+        <p>Wat betekent de opkomst van de REST convenience API's voor de huidige OGC
           webservice standaarden? Nemen we -met het toenemende gebruik van
           generieke webstandaarden- afscheid van de geospecifieke standaarden?
-          Dat zien we voorlopig niet gebeuren. Want in bijvoorbeeld het
-          gemeentelijke applicatielandschap zien we een toenemend aantal
-          applicaties dat via webservices een achtergrondkaart of luchtfoto ter
-          referentie aanbiedt. En in Europese context zien we met INSPIRE ook
-          een (wettelijk verankerde) toepassing van een op OGC-standaarden
-          gebaseerde infrastructuur. Een andere indicator dat OGC webservices
-          nog wel even deel blijven uitmaken van de Nederlandse SDI, zien we in
-          sommige praktijkvoorbeelden waarbij de eerste stap richting API's
-          wordt gezet door een interface aan te bieden die onder water de
-          bestaande webservices bevraagd. Samengevat: we voorzien geen radicale
-          overgang van OGC webservices naar API's. Tegelijk zien we wel
-          mogelijkheden voor deze standaarden en profielen erop om door te
-          ontwikkelen, om zo mee te evolueren met de veranderende vragen die aan
-          de SDI gesteld worden. Op standaardniveau zien we dat de XML-requests
+          Dat zien we niet gebeuren. We voorzien dat beide categorien naast elkaar bestaansrecht hebben en houden: ze zijn bedoeld voor verschillend gebruik en voor verschillende doelgroepen. De webservices vereisen bij de gebruiker een steile leercurve, maar vervolgens bieden ze veel functionaliteit. Dit is uitermate geschikt voor geo-specialisten en andere dagelijkse gebruikers. REST convenience API's vereisen een veel minder steile leercurve, maar bieden ook minder functionaliteit. Hiermee zijn ze vooral geschikt voor incidenteel gebruik en eenvoudige bevragingen. Als variant op de 80/20 regel: met convenience API's kun je met 20 procent van de inspanning 80 procent van de vragen beantwoorden. Voor veel gebruik en voor veel gebruikers volstaat dat, maar voor een aantal professionele gebruikers volstaat dat niet. Samengevat: we voorzien geen radicale overgang van OGC webservices naar API's, maar een verbreding van de ontsluitingsmechanismes waarin REST convenience API's naast OGC webservices zullen worden aangeboden.</p>
+          <p>Hoewel we REST convenience API's niet als opvolger zien van OGC webservices, zien we wel dat de opkomst van die APIs de doorontwikkeling van de services beïnvloedt. Op standaardniveau zien we dat de XML-requests
           behoorlijk zwaar zijn; het zou mooi zijn als dat lichter kan worden.
           Maar ook op het niveau van output zien we evolutie: het is wenselijk
           om meer keuze te bieden in outputformaten, inclusief lichtere formaten
@@ -431,28 +393,20 @@
           gehouden worden met performance en benodigde geheugencapaciteit en
           rekenkracht.</p>
         <p>Voor de ontsluiting van Linked Data zullen API's een belangrijke rol
-          spelen, maar zullen we meer SPARQL endpoints gaan zien. Deze endpoints
+          spelen, maar we zullen ook meer SPARQL endpoints gaan zien. Deze endpoints
           maken het bevragen van Linked Data in RDF-structuur mogelijk. Het
           tempo waarin dergelijke endpoints gemeengoed gaan worden, zal mede
           afhangen van de snelheid waarmee triple stores gemeengoed worden. Op
-          termijn is het goed denkbaar dat GeoSPARQL toegevoegd zal worden aan
+          dit moment zien we bij het werkveld nog geen behoefte aan een Nederlands profiel op GeoSPARQL of aan het toevoegen aan
           de set Geostandaarden op de Pas toe of leg uit-lijst. </p>
-        <div class="issue" data-number="7">
-          <p>Voor ontsluiting via webservices worden aanvullende eisen gesteld
-            in Nederlandse profielen op WMS en WFS. Voor aanbieders van API's
-            zien we (via API strategieën) een vergelijkbare tendens. Dat roept
-            de vraag op in hoeverre het noodzakelijk of wenselijk is om te komen
-            met een Nederlands profiel op GeoSPARQL?</p>
-        </div>
-        <div class="issue" data-number="8">
-          <p>Voor het ontsluiten van sensordata zijn op verschillende plaatsen
+        <p>Voor het ontsluiten van sensordata zijn op verschillende plaatsen
             standaarden in ontwikkeling. Zo wordt er gewerkt aan OGC standaarden
             (SOS, SensorThings API), maar ook aan W3C standaarden (o.a. SSN).
             Voor deze standaarden geldt dat ze -voor zover ze voldoende gereed
-            zijn- nog maar zeer beperkt toegepast worden. Hiermee is het voor
-            ons nu nog te vroeg om een uitspraak te doen over de wenselijke
-            richting van standaarden voor het ontsluiten van sensordata.</p>
-        </div>
+            zijn- nog beperkt worden toegepast. Op dit vlak is het daarom nu voor
+            ons nog te vroeg om een uitspraak te doen over de wenselijke
+            richting van standaarden voor het ontsluiten van sensordata. Wel zien we een duidelijke groei in de ontsluiting van data uit uit Observations and measurements, o.a. ook in INSPIRE context (bathymetrie, hoogte). Hiermee verbreedt het aandachtsgebied van Geonovum. In dit bredere aandachtsgebied zullen we ontwikkelingen actief blijven volgen.</p>
+       
         <div class="note">
           <p>Om ontsluiting van data te optimaliseren, zijn de aanbevelingen uit
             de W3C Data on the web en OGC/W3C Spatial data on the web Best
