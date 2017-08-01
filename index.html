@@ -306,7 +306,7 @@
         overheid, waarin zowel op strategisch als technisch niveau een aantal aanbevelingen gedaan kan worden (bijv. met
         betrekking tot RESTful principes, beveiliging, geo-aspecten en documentatie).
       </p>
-      <i>REST convenience API's & OGC webservices</i>
+      <h4>REST convenience API's & OGC webservices</h4>
       <p>Wat betekent de opkomst van de REST convenience API's voor de huidige OGC webservice standaarden? Nemen we -met het
         toenemende gebruik van generieke webstandaarden- afscheid van de geospecifieke standaarden? Dat zien we niet gebeuren.
         We voorzien dat beide categorien naast elkaar bestaansrecht hebben en houden: ze zijn bedoeld voor verschillend gebruik
@@ -326,22 +326,22 @@
         styling biedt. Op het niveau van de Nederlandse profielen is zeker ook ruimte voor evolutie. Vanuit het oogpunt van
         bredere bruikbaarheid (inclusief voor het web) is het denkbaar om meer coördinaatsystemen voor te schrijven (bijv.
         niet alleen RD maar ook Web Mercator) en voor WFS meer outputformaten (bijv. minimaal GML en GeoJSON).</p>
-      <i>Bestandsformaten</i>
+      <h4>Bestandsformaten</h4>
       <p>De verbreding van outputformaten beperkt zich niet uitsluitend tot WFS, maar is ook van toepassing op verschillende downloadvoorzieningen in de Nederlandse SDI. GML is vanuit zijn brede toepasbaarheid een goede wijze, maar niets staat aanbieders van data in de weg om meerdere formaten aan te bieden. Zo lijkt bijvoorbeeld <a href="http://www.geopackage.org/">OGC GeoPackage</a> een geschikte oplossing voor al die gebruikers die in de praktijk vragen om een shape-file, mits het niet gaat om 3D data (GeoPackage ondersteunt momenteel geen solids). Andere gebruikers vragen in toenemende mate om JSON, GeoJSON of JSON-LD, al dan niet in combinatie met aanvullende werkafspraken, bijvoorbeeld hoe om te gaan met coördinaatsystemen. Geonovum wil verkennen (mogelijk in de vorm van een testbed) in hoeverre zij in samenwerking met het werkveld een handreiking kan opstellen voor het naast GML aanbieden van dergelijke lichtere formaten.</p>
-      <i>3D</i>
+      <h4>3D</h4>
       <p>Op het punt van ontsluiting van 3D data zullen de standaarden zich nog verder moeten bewijzen. Mogelijk gaan OGC 3D
         portrayal services hier een rol in spelen, aangevuld met (nu nog kandidaat-) OGC Community Standards als 3D Tiling
         (o.b.v. Cesium) of I3S. De specifieke uitdaging van 3D data schuilt in het datavolume: zowel bij visualisatie- als
         downloadvoorzieningen moet nadrukkelijk rekening gehouden worden met performance en benodigde geheugencapaciteit
         en rekenkracht.
       </p>
-      <i>Linked Data</i>
+      <h4>Linked Data</h4>
       <p>Voor de ontsluiting van Linked Data zullen API's een belangrijke rol spelen, maar we zullen ook meer SPARQL endpoints
         gaan zien. Deze endpoints maken het bevragen van Linked Data in RDF-structuur mogelijk. Het tempo waarin dergelijke
         endpoints gemeengoed gaan worden, zal mede afhangen van de snelheid waarmee triple stores gemeengoed worden. Op dit
         moment zien we bij het werkveld nog geen behoefte aan een Nederlands profiel op GeoSPARQL of aan het toevoegen aan
         de set Geostandaarden op de Pas toe of leg uit-lijst. </p>
-      <i>Sensordata</i>
+      <h4>Sensordata</h4>
       <p>Voor het ontsluiten van sensordata zijn op verschillende plaatsen standaarden in ontwikkeling. Zo wordt er gewerkt
         aan OGC standaarden (SOS, SensorThings API), maar ook aan W3C standaarden (o.a. SSN). Voor deze standaarden geldt
         dat ze -voor zover ze voldoende gereed zijn- nog beperkt worden toegepast. Op dit vlak is het daarom nu voor ons
@@ -399,7 +399,7 @@
         Het gaat hierbij niet alleen om inzicht in het 'wat' (waar heeft de dataset betrekking op), maar ook om het 'wie'
         (van wie is de dataset en belangrijker: wat zegt mij dat over de kwaliteit). Dit inzicht in de herkomst van data
         (de term provenance wordt hiervoor steeds gangbaarder) vormt een belangrijk argument om data wel of niet te gaan
-        gebruiken. Vanuit deze fit-for-purpose beoordeling redenerend, is het een interessant idee om te verkennen in hoeverre het concept van de Gegevenscatalogus van het DSO breder inzetbaar is (nationaal in plaats van binnen DSO context). Door een aantal Linked Data concepten toe te passen op deze architectuur zou je de beschrijvende elementen van de Gegevenscatalogus op dezelfde plaats kunnen ontsluiten als de data zelf (via services, REST convenience API's en/of SPARQL endpoints), waarmee de noodzaak voor een afzonderlijke metadatacatalogus zou verdwijnen. Geonovum wil verkennen hoe een dergelijke architectuur eruit zou kunnen zien en samen met het werkveld bekijken of een dergelijke schets als stip op de horizon kan fungeren. Een aandachtspunt in dit traject is de wijze waarop gebruikers over datakwaliteit worden geïnformeerd. O.a. <a href="https://www.w3.org/TR/dwbp/#quality">Best Practice 6</a> uit de <a href="https://www.w3.org/TR/dwbp/">Data on the Web Best Practices</a> en <a href="http://w3c.github.io/sdw/bp/#desc-accuracy">Best Practice 14</a> uit de <a href="http://w3c.github.io/sdw/bp//">Spatial Data on the Web Best Practices</a> geven hier nuttige handreikingen voor.</p>
+        gebruiken. Vanuit deze fit-for-purpose beoordeling redenerend, is het een interessant idee om te verkennen in hoeverre het concept van de Gegevenscatalogus van het DSO breder inzetbaar is (nationaal in plaats van binnen DSO context). Door een aantal Linked Data concepten toe te passen op deze architectuur zou je de beschrijvende elementen van de Gegevenscatalogus op dezelfde plaats kunnen ontsluiten als de data zelf (via services, REST convenience API's en/of SPARQL endpoints), waarmee de noodzaak voor een afzonderlijke metadatacatalogus zou verdwijnen. Geonovum wil verkennen hoe een dergelijke architectuur eruit zou kunnen zien en samen met het werkveld bekijken of een dergelijke schets als stip op de horizon kan fungeren. Een aandachtspunt in dit traject is de wijze waarop gebruikers over datakwaliteit worden geïnformeerd. O.a. <a href="https://www.w3.org/TR/dwbp/#quality">Best Practice 6</a> uit de Data on the Web Best Practices en <a href="http://w3c.github.io/sdw/bp/#desc-accuracy">Best Practice 14</a> uit de Spatial Data on the Web Best Practices geven hier nuttige handreikingen voor.</p>
     </section>
   </section>
 
