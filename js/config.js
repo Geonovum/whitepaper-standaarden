@@ -7,12 +7,12 @@ var respecConfig = {
     {
       name: "Friso Penninga",
       company: "Geonovum",
-      url: "http://www.geonovum.nl/",
+      companyURL: "http://www.geonovum.nl/",
     },
     {
       name: "Linda van den Brink",
       company: "Geonovum",
-      url: "http://www.geonovum.nl/",
+      companyURL: "http://www.geonovum.nl/",
     },
   ],
   shortName: "whitepaper-standaarden",
