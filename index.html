@@ -393,7 +393,7 @@
         in RDF via het GeoDCAT applicatieprofiel een goed voorbeeld van een dergelijke evolutie: op deze wijze kan ISO-conforme
         metadata ook ontsloten worden richting andere open data portalen. Het verlaten van ISO-standaarden is op dit moment
         niet aan de orde: GeoDCAT-AP is een aanvullende ontsluiting van metadata richting de generieke open data wereld,
-        maar geen vervanger. Bovendien zal INSPIRE ook ISO-conforme metadata blijven vragen. Tegelijk werkt Geonovum wel aan actualisatie van de Nederlandse metadataprofielen en in W3C-verband (<a href="https://www.w3.org/2017/dxwg/charter">in de Dataset Exchange Working Group</a>) aan het harmoniseren van metadata uit verschillende contexten als DCAT, ISO, CKAN en INSPIRE. </p>
+        maar geen vervanger. Bovendien zal INSPIRE ook ISO-conforme metadata blijven vragen. Tegelijk werkt Geonovum wel aan actualisatie van de Nederlandse metadataprofielen en in W3C-verband (in de <a href="https://www.w3.org/2017/dxwg/charter">Dataset Exchange Working Group</a>) aan het harmoniseren van metadata uit verschillende contexten als DCAT, ISO, CKAN en INSPIRE. </p>
       <p>Een ander belangrijk doel van metadata is om gebruikers te laten beoordelen of data bruikbaar is voor hun toepassing.
         Met een toenemend aantal gebruikers van buiten het geodomein, wordt deze functie van metadata alleen maar belangrijker.
         Het gaat hierbij niet alleen om inzicht in het 'wat' (waar heeft de dataset betrekking op), maar ook om het 'wie'
@@ -423,39 +423,28 @@
       <li><em>Doorontwikkeling OGC webservices voor ontsluiting</em>: internationaal gaan de eerste stemmen op om te proberen
         deze services geleidelijk richting REST-like API's door te ontwikkelen. Stel dat de standaarden zo aangepast worden
         dat de requests aan services ook lichter kunnen worden (JSON i.p.v. XML) en meer gebruik maken van de mogelijkheden
-        van het HTTP protocol, dan worden de meest genoemde zwaktes van deze standaarden aangepakt. Deze aanpak is er één
-        van evolutie in plaats van revolutie, waarmee SDI's een radicale breuk qua technologie bespaard kan blijven. Een
+        van het HTTP protocol, dan worden de meest genoemde zwaktes van deze standaarden aangepakt. Een voorbeeld hiervan is het initiatief om tot WFS 3.0 te komen, dat volledig zou moeten voldoen aan de (Spatial) Data on the Web Best Practices. Zulke aanpakken richten zich op evolutie in plaats van revolutie, waarmee SDI's een radicale breuk qua technologie bespaard kan blijven. Een
         belangrijke strategische keuze is in hoeverre we ons als Geonovum hier hard voor willen maken. Het zou passen bij
         onze rol t.o.v. de standaarden voor de Nederlandse SDI en bij onze positie binnen het Open Geospatial Consortium.
       </li>
-      <li><em>Uitgangspunten semantische modellering</em>: voorlopig wordt weliswaar gedacht aan een linked data-profiel op NEN3610,
-        maar we blijven de onderliggende sectormodellen in UML en volgens de <i>closed
-            world assumption</i> ontwikkelen. Dat kan de linkbaarheid en daarmee potentieel het gebruik en de bruikbaarheid
-        van de volgens die modellen gestructureerde data beperken. Dit roept de vraag op of we met NEN3610 en de onderliggende
-        modellen over moeten stappen naar de <i>open
-            world assumption</i> en onze begrippen en modellen met SKOS en OWL moeten gaan vastleggen. Op dit moment hebben
-        we nog onvoldoende inzicht in de precieze betekenis en consequenties van deze keuze.</li>
       <li><em>Alternatief voor GML als uitwisselstandaard</em>: aan de hand van de set criteria die we hanteren voor een uitwisselstandaard
         in het geodomein, hebben we geconcludeerd dat er momenteel geen alternatief is voor GML dat aan al die criteria voldoet.
         Daarom houden we nu vast aan GML als uitwisselstandaard (voor ontsluiting zien we meer lichtere alternatieven ontstaan).
         Deze situatie roept de vraag op of Geonovum actief zou moeten inzetten op een goed alternatief, bijvoorbeeld een
         volwaardige JSON-variant van GML. GeoJSON is expliciet als lichtgewicht oplossing voor eenvoudige toepassingen bedoeld.
         Een volwaardige JSON-variant van GML is niet binnen GeoJSON mogelijk, maar zou ergens tussen GeoJSON en GML in komen
-        te liggen qua zwaarte en complexiteit.
-      </li>
+        te liggen qua zwaarte en complexiteit. Naast GML als formele standaard kan ook gekeken worden naar alternateven die voor een deel van de toepassingen bruikbaar zijn en aangeboden zouden kunnen worden naast GML. Met name GeoPackage kan voor een aantal toepassingen interessant zijn, aangezien de softwareondersteuning van deze open standaard goed lijkt en deze vorm mogelijk een oplossing biedt voor al die gebruikers die nu om een shape vragen.
+        </li>
       <li><em>Linked geo data</em>: uit ervaringen met het opslaan van grote geografische datasets in triple stores blijkt dat
         linked data voor het geodomein nog geen volwassen techniek is. In hoeverre moet Geonovum zich inzetten om dit te
         bevorderen? Om die vraag te beantwoorden, zullen we moeten kijken naar de meerwaarde van de verschillende gradaties
         van linked data voor het geodomein. Want als we vooral begrippen willen kunnen linken en voor elk object op het web
         met een eigen URI en links tussen de objecten willen hebben; maar niet per sé met RDF, triple stores en SPARQL endpoints,
         dan ligt het ambitieniveau meer op "linked data" dan op "Linked Data".</li>
-      <li><em>Formaliseren best practices</em>: de inzichten uit bijvoorbeeld de W3C <a href="https://www.w3.org/TR/dwbp/">Data on the Web Best
+      <li><em>Laten landen best practices</em>: de inzichten uit bijvoorbeeld de W3C <a href="https://www.w3.org/TR/dwbp/">Data on the Web Best
             Practices</a> en OGC / W3C <a href="https://www.w3.org/TR/sdw-bp/">Spatial
             Data on the Web Best Practices</a> zijn zeer waardevol en kunnen in hoge mate bijdragen aan het succes van de
-        Nederlandse SDI. Hetzelfde geldt voor bijvoorbeeld API- en URI-richtlijnen. Maar hoe kan Geonovum als standaardenorganisatie
-        gewicht geven aan dergelijke richtlijnen? Of, in andere woorden, hoe maximaliseer je de impact van zulke richtlijnen?
-        Het instrumentarium van Geonovum beperkt zich nu tot het voordragen voor opname op de Pas toe of leg uit-lijst of
-        het borgen via een wettelijke (sectorale) basis. </li>
+        Nederlandse SDI. Hetzelfde geldt voor bijvoorbeeld API- en URI-richtlijnen. Dergelijke richtlijnen en handreikingen hebben niet het karakter van formele standaarden. Daardoor zal Geonovum andere methoden gebruiken om de impact van deze richtlijnen en handreikingen te maximaliseren. Zo valt te denken aan meer kennissessies, publicaties en voorbeeldimplementaties en etalage-projecten.</li>
     </ul>
   </section>
 
