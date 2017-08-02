@@ -229,7 +229,7 @@
         <li>Ondersteuning van 3D geo-informatie</li>
         <li>Ondersteuning voor het vastleggen van de in een informatiemodel gedefinieerde structuur in een schema</li>
       </ul>
-      <p> GML is nog steeds de enige open standaard die aan al deze criteria voldoet. Lichtere uitwisselstandaarden, waaronder
+      <p>GML is nog steeds de enige open standaard die aan al deze criteria voldoet. Lichtere uitwisselstandaarden, waaronder
         GeoJSON, voldoen niet aan al deze criteria. GeoJSON gebruikt bijvoorbeeld alleen WGS'84 als coördinaatsysteem en
         ondersteunt niet alle geometrietypen (en sluit het uitbreiden met extra typen expliciet uit). Dit leidt ertoe dat
         de positie van GML als uitwisselformaat (bijvoorbeeld tussen bronhouders en landelijke voorzieningen) niet ter discussie
@@ -333,7 +333,7 @@
         portrayal services hier een rol in spelen, aangevuld met (nu nog kandidaat-) OGC Community Standards als 3D Tiling
         (o.b.v. Cesium) of I3S. De specifieke uitdaging van 3D data schuilt in het datavolume: zowel bij visualisatie- als
         downloadvoorzieningen moet nadrukkelijk rekening gehouden worden met performance en benodigde geheugencapaciteit
-        en rekenkracht.
+        en rekenkracht. Downloads zullen voorlopig voornamelijk in CityGML plaatsvinden. Wel zien we een interresante -zij het nog zeer prille- ontwikkeling rond CityJSON: een JSON encoding van het informatiemodel van CityGML.
       </p>
       <h4>Linked Data</h4>
       <p>Voor de ontsluiting van Linked Data zullen API's een belangrijke rol spelen, maar we zullen ook meer SPARQL endpoints
@@ -430,10 +430,16 @@
     </ul>
   </section>
  <section id="conclusies">
-      <h3>Conclusie</h3>
+      <h2>Conclusie</h2>
       <p>
-        dd
-   </p>
+        Op basis van deze white paper en de reacties die tijdens de consultatieronde zijn ingebracht, kunnen we een aantal conclusies trekken:</p>
+   <ul>
+     <li><em>Scope:</em> in de consultatieversie van de white paper constateerden we dat de scope van de set geostandaarden zich grotendeels beperkt tot vectordata, al werd die scope nergens expliciet vastgelegd. Hoewel we geen noodzaak zien om de scope nu wel expliciet vast te leggen, benoemen we wel dat we ons nadrukkelijk ook op coverages richten: data uit Observations and measurements. </li>
+     <li><em>NEN3610:</em> Geonovum werkt al aan het harmoniseren van verschillende informatiemodellen en zal dit blijven doen. Daarnaast zien we een duidelijke behoefte om NEN3610 uit te breiden met een Linked Data profiel, zonder dat NEN3610 zelf ingrijpend gewijzigd wordt. We blijven modelleren volgens de (i)closed world assumption</i> met het oog op de validatiemogelijkheden. En valideren is een must omdat juist in een SDI betrouwbare en correcte overheidsdata centraal staat.</li>
+  <li><em>Uitwisselformaat:</em> GML staat -mede bij gebrek aan volwaardige alternatieven- niet ter discussie. Wel verdienen internationale initiatieven om tot volwaardige, lichtere alternatieven te komen, alle steun. Geonovum zal overwegen om actief te participeren in dergelijke initiatieven. Daarnaast willen we verkennen welke handreiking we kunnen geven voor het parallel aanbieden van lichtere formaten naast GML, daar waar dat wél mogelijk is.</li>
+  <li><em>Ontsluiting:</em> hier zien we een duidelijke trend naar het verbreden van het aanbod, waarin bijvoorbeeld REST convenience API's naast OGC webservices worden aageboden. Voor elk type ontsluiting zijn gebruikersgroepen en gebruikervragen die het aanbieden van dat type rechtvaardigen. Aan deze trend verbinden we o.a. de acties dat we werken aan het opstellen van een overheidsbrede API-strategie, dat we in willen zetten op doorontwikkeling van OGC webservices richting de laatste inzichten van de Spatial Data on the Web Best Practices, werken aan het aanbieden van meerdere outputformaten (bijvoorbeeld GML én JSON) en aan het aanbieden van data in meerdere coördinaatsystemen (bijv. in RD én Web Mercator). Daarnaast volgen we ontwikkelingen rond ontsluiting van coverages en sensordata.</li>
+  <li><em>Metadata/ vindbaarheid:</em> het gebruik van ISO-conforme metadata blijft de komende jaren de standaard. Tegelijk werken we aan de ontwikkeling van nieuwe Nederlandse metadataprofielen o.b.v. de meest recente ISO en INSPIRE eisen, aan betere export richting de generieke open data wereld via GeoDCAT-AP en in W3C-verband aan afstemming tusen verschillende metadatadomeinen (waaronder ISO, DCAT, CKAN en INSPIRE). Daarnaast willen we in samenwerking met het werkveld gaan verkennen hoe voor de langere termijn een architectuur, gebaseerd op een Linked Data aanpak van metadata, er voor Nederland uit zou kunnen zien. De huidige ideeën rond de Gegevenscatalogus van het DSO vormen hierbij het uitgangspunt.</li>
+  </ul>
   </section>
 </body>
 
