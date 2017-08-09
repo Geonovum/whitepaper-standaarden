@@ -339,7 +339,7 @@
         <p>Wat betekent de opkomst van de REST convenience API's voor de huidige OGC webservice standaarden? Nemen we -met het
           toenemende gebruik van generieke webstandaarden- afscheid van de geospecifieke standaarden? Dat zien we niet gebeuren.
           We voorzien dat beide categorieën naast elkaar bestaansrecht hebben en houden: ze zijn bedoeld voor verschillend
-          gebruik en voor verschillende doelgroepen. De webservices vereisen bij de gebruiker een steile leercurve, maar
+          gebruik en voor verschillende doelgroepen. De OGC webservices vereisen bij de gebruiker een steile leercurve, maar
           vervolgens bieden ze veel functionaliteit. Dit is uitermate geschikt voor geo-specialisten en andere dagelijkse
           gebruikers. REST convenience API's vereisen een veel minder steile leercurve, maar bieden ook minder functionaliteit.
           Hiermee zijn ze vooral geschikt voor incidenteel gebruik en eenvoudige bevragingen. Als variant op de 80/20 regel:
@@ -359,8 +359,8 @@
       <section id="impact-bestandsformaten">
         <h4>Bestandsformaten</h4>
         <p>De verbreding van outputformaten beperkt zich niet uitsluitend tot WFS, maar is ook van toepassing op verschillende
-          downloadvoorzieningen in de Nederlandse SDI. GML is vanuit zijn brede toepasbaarheid een goede wijze, maar niets
-          staat aanbieders van data in de weg om meerdere formaten aan te bieden. Zo lijkt bijvoorbeeld <a href="http://www.geopackage.org/">OGC GeoPackage</a>          een geschikte oplossing voor al die gebruikers die in de praktijk vragen om een shape-file, mits het niet gaat
+          downloadvoorzieningen in de Nederlandse SDI. GML is vanwege zijn brede toepasbaarheid nog steeds de beste optie,
+          maar niets staat aanbieders van data in de weg om meerdere formaten aan te bieden. Zo lijkt bijvoorbeeld <a href="http://www.geopackage.org/">OGC GeoPackage</a>          een geschikte oplossing voor al die gebruikers die in de praktijk vragen om een shape-file, mits het niet gaat
           om 3D data (GeoPackage ondersteunt momenteel geen solids). Andere gebruikers vragen in toenemende mate om JSON,
           GeoJSON of JSON-LD, al dan niet in combinatie met aanvullende werkafspraken, bijvoorbeeld hoe om te gaan met coördinaatsystemen.
           Geonovum wil verkennen (mogelijk in de vorm van een testbed) in hoeverre zij in samenwerking met het werkveld een
@@ -369,11 +369,12 @@
       <section id="impact-3d">
         <h4>3D</h4>
         <p>Op het punt van ontsluiting van 3D data zullen de standaarden zich nog verder moeten bewijzen. Mogelijk gaan OGC
-          3D portrayal services hier een rol in spelen, aangevuld met (nu nog kandidaat-) OGC Community Standards als 3D
-          Tiling (o.b.v. Cesium) of I3S. De specifieke uitdaging van 3D data schuilt in het datavolume: zowel bij visualisatie-
-          als downloadvoorzieningen moet nadrukkelijk rekening gehouden worden met performance en benodigde geheugencapaciteit
-          en rekenkracht. Downloads zullen voorlopig voornamelijk in CityGML plaatsvinden. Wel zien we een interessante -zij
-          het nog zeer prille- ontwikkeling rond CityJSON: een JSON encoding van het informatiemodel van CityGML.
+          3D portrayal services hier een rol in spelen, aangevuld met (op moment van schrijven nog kandidaat-) OGC Community
+          Standards als 3D Tiling (o.b.v. Cesium) of I3S. De specifieke uitdaging van 3D data schuilt in het datavolume:
+          zowel bij visualisatie- als downloadvoorzieningen moet nadrukkelijk rekening gehouden worden met performance en
+          benodigde geheugencapaciteit en rekenkracht. Downloads zullen voorlopig voornamelijk in CityGML plaatsvinden. Wel
+          zien we een interessante -zij het nog zeer prille- ontwikkeling rond CityJSON: een JSON encoding van het informatiemodel
+          van CityGML.
         </p>
       </section>
       <section id="impact-linkeddata">
@@ -387,12 +388,12 @@
       <section id="impact-sensordata">
         <h4>Sensordata</h4>
         <p>Voor het ontsluiten van sensordata zijn op verschillende plaatsen standaarden in ontwikkeling. Zo wordt er gewerkt
-          aan OGC standaarden (SOS, SensorThings API), maar ook aan W3C standaarden (o.a. SSN). Voor deze standaarden geldt
-          dat ze -voor zover ze voldoende gereed zijn- nog beperkt worden toegepast. Op dit vlak is het daarom nu voor ons
-          nog te vroeg om een uitspraak te doen over de wenselijke richting van standaarden voor het ontsluiten van sensordata.
-          Wel zien we een duidelijke groei in de ontsluiting van data uit Observations and measurements, o.a. ook in INSPIRE
-          context (bathymetrie, hoogte). Hiermee verbreedt het aandachtsgebied van Geonovum. In dit bredere aandachtsgebied
-          zullen we ontwikkelingen actief blijven volgen.</p>
+          aan OGC standaarden (SOS, SensorThings API), maar ook aan W3C standaarden (o.a. SSN en Web of Things standaarden).
+          Voor deze standaarden geldt dat ze -voor zover ze voldoende gereed zijn- nog beperkt worden toegepast. Op dit vlak
+          is het daarom nu voor ons nog te vroeg om een uitspraak te doen over de wenselijke richting van standaarden voor
+          het ontsluiten van sensordata. Wel zien we een duidelijke groei in de ontsluiting van data uit Observations and
+          measurements, o.a. ook in INSPIRE context (bathymetrie, hoogte). Hiermee verbreedt het aandachtsgebied van Geonovum.
+          In dit bredere aandachtsgebied zullen we ontwikkelingen actief blijven volgen.</p>
       </section>
     </section>
     <section id="vindbaarheid">
@@ -412,16 +413,17 @@
         de beschrijvende elementen (metadata), uitleg over de BAG (die nu verspreid staat over verschillende webpagina's),
         links naar alle vormen waarin de BAG wordt ontsloten (view- en downloadservices, APIs, linked data, BAG extract,
         ...) , ondersteuning in de vorm van helpdesk en forum (community) en een viewer om direct een indruk van de data
-        te krijgen. In deze vorm krijgt metadata wellicht een minder herkenbare (afzonderlijke) front-end, maar wordt de
-        catalogus meer een backend om metadata eenmalig en eenduidig vast te leggen. Op basis van deze backend kan ook nog
-        steeds een OGC catalogue service draaien, die bijvoorbeeld voor INSPIRE verplicht is. De tendens voor de komende
-        jaren rond metadata is hiermee vergelijkbaar met die rond OGC webservices voor ontsluiting: we verwachten de komende
-        jaren een evolutie, gericht op betere aansluiting op het web. Richting Linked Data is de ontsluiting van metadata
-        in RDF via het GeoDCAT applicatieprofiel een goed voorbeeld van een dergelijke evolutie: op deze wijze kan ISO-conforme
-        metadata ook ontsloten worden richting andere open data portalen. Het verlaten van ISO-standaarden is op dit moment
-        niet aan de orde: GeoDCAT-AP is een aanvullende ontsluiting van metadata richting de generieke open data wereld,
-        maar geen vervanger. Bovendien zal INSPIRE ook ISO-conforme metadata blijven vragen. Tegelijk werkt Geonovum wel
-        aan actualisatie van de Nederlandse metadataprofielen en in W3C-verband (in de <a href="https://www.w3.org/2017/dxwg/charter">Dataset Exchange Working Group</a>)
+        te krijgen. </p>
+      <p>In deze vorm krijgt metadata wellicht een minder herkenbare (afzonderlijke) front-end, maar wordt de catalogus meer
+        een backend om metadata eenmalig en eenduidig vast te leggen. Op basis van deze backend kan ook nog steeds een OGC
+        catalogue service draaien, die bijvoorbeeld voor INSPIRE verplicht is. De tendens voor de komende jaren rond metadata
+        is hiermee vergelijkbaar met die rond OGC webservices voor ontsluiting: we verwachten de komende jaren een evolutie,
+        gericht op betere aansluiting op het web. Richting Linked Data is de ontsluiting van metadata in RDF via het GeoDCAT
+        applicatieprofiel een goed voorbeeld van een dergelijke evolutie: op deze wijze kan ISO-conforme metadata ook ontsloten
+        worden richting andere open data portalen. Het verlaten van ISO-standaarden is op dit moment niet aan de orde: GeoDCAT-AP
+        is een aanvullende ontsluiting van metadata richting de generieke open data wereld, maar geen vervanger. Bovendien
+        zal INSPIRE ook ISO-conforme metadata blijven vragen. Tegelijk werkt Geonovum wel aan actualisatie van de Nederlandse
+        metadataprofielen en in W3C-verband (in de <a href="https://www.w3.org/2017/dxwg/charter">Dataset Exchange Working Group</a>)
         aan het harmoniseren van metadata uit verschillende contexten als DCAT, ISO, CKAN en INSPIRE. </p>
       <p>Een ander belangrijk doel van metadata is om gebruikers te laten beoordelen of data bruikbaar is voor hun toepassing.
         Met een toenemend aantal gebruikers van buiten het geodomein, wordt deze functie van metadata alleen maar belangrijker.
@@ -431,13 +433,14 @@
         gebruiken. Vanuit deze fit-for-purpose beoordeling redenerend, is het een interessant idee om te verkennen in hoeverre
         het concept van de Gegevenscatalogus van het DSO breder inzetbaar is (nationaal in plaats van binnen DSO context).
         Door een aantal Linked Data concepten toe te passen op deze architectuur zou je de beschrijvende elementen van de
-        Gegevenscatalogus op dezelfde plaats kunnen ontsluiten als de data zelf (via services, REST convenience API's en/of
-        SPARQL endpoints), waarmee de noodzaak voor een afzonderlijke metadatacatalogus zou verdwijnen. Geonovum wil verkennen
-        hoe een dergelijke architectuur eruit zou kunnen zien en samen met het werkveld bekijken of een dergelijke schets
-        als stip op de horizon kan fungeren. Een aandachtspunt in dit traject is de wijze waarop gebruikers over datakwaliteit
-        worden geïnformeerd. O.a. <a href="https://www.w3.org/TR/dwbp/#quality">Best Practice 6</a> uit de Data on the Web
-        Best Practices en <a href="http://w3c.github.io/sdw/bp/#desc-accuracy">Best Practice 14</a> uit de Spatial Data on
-        the Web Best Practices geven hier nuttige handreikingen voor.</p>
+        Gegevenscatalogus, inclusief begrippen en definities uit informatiemodellen, op dezelfde plaats kunnen ontsluiten
+        als de data zelf (via services, REST convenience API's en/of SPARQL endpoints), waarmee de noodzaak voor een afzonderlijke
+        metadatacatalogus zou verdwijnen EN de data doorzocht kan worden op basis van termen uit het bijbehorende informatiemodel.
+        Geonovum wil verkennen hoe een dergelijke architectuur eruit zou kunnen zien en samen met het werkveld bekijken of
+        een dergelijke schets als stip op de horizon kan fungeren. Een aandachtspunt in dit traject is de wijze waarop gebruikers
+        over datakwaliteit worden geïnformeerd. O.a. <a href="https://www.w3.org/TR/dwbp/#quality">Best Practice 6</a> uit
+        de Data on the Web Best Practices en <a href="http://w3c.github.io/sdw/bp/#desc-accuracy">Best Practice 14</a> uit
+        de Spatial Data on the Web Best Practices geven hier nuttige handreikingen voor.</p>
     </section>
   </section>
 
@@ -450,11 +453,11 @@
       dusdanig volwassen, dat ze impact gaan krijgen op de inrichting van de Nederlandse SDI.</p>
     <p>Samenvattend kunnen we stellen dat de huidige SDI volwassen is, maar tegelijk zal moeten blijven ontwikkelen om duurzaam
       in te kunnen spelen op technologische en maatschappelijke ontwikkelingen. De opkomst van nieuwe technieken als Linked
-      Data en de methoden van het web lijken niet disruptief te zijn: juist vanuit de doelgroepspecifieke benadering (niet
-      langer <i>one size fits all</i>) en de platformgedachte zullen de huidige en toekomstige standaarden voorlopig parallel
-      toegepast worden. Bovendien zien we huidige standaarden langzaam doorevolueren in de richting van de nieuwe technieken
-      en standaarden, waardoor verschillen minder fundamenteel worden. Gebruikers van de Nederlandse SDI zullen hierdoor
-      ook niet met radicale breuken op technologisch vlak worden geconfronteerd.</p>
+      Data en de verdere ontwikkeling van webstandaarden lijken niet disruptief te zijn: juist vanuit de doelgroepspecifieke
+      benadering (niet langer <i>one size fits all</i>) en de platformgedachte zullen de huidige en toekomstige standaarden
+      voorlopig parallel toegepast worden. Bovendien zien we huidige geostandaarden langzaam doorevolueren in de richting
+      van de nieuwe technieken en standaarden, waardoor verschillen minder fundamenteel worden. Gebruikers van de Nederlandse
+      SDI zullen hierdoor ook niet met radicale breuken op technologisch vlak worden geconfronteerd.</p>
     <p>Het ontwikkelperspectief geeft globaal richting aan de doorontwikkeling van de standaarden die de ruggengraat van de
       Nederlandse SDI vormen, maar werpt tegelijk ook een aantal strategische keuzes op:</p>
     <ul>
@@ -470,27 +473,27 @@
       </li>
       <li><em>Alternatief voor GML als uitwisselstandaard</em>: aan de hand van de set criteria die we hanteren voor een uitwisselstandaard
         in het geodomein, hebben we geconcludeerd dat er momenteel geen alternatief is voor GML dat aan al die criteria voldoet.
-        Daarom houden we nu vast aan GML als uitwisselstandaard (voor ontsluiting zien we meer lichtere alternatieven ontstaan).
-        Deze situatie roept de vraag op of Geonovum actief zou moeten inzetten op een goed alternatief, bijvoorbeeld een
-        volwaardige JSON-variant van GML. GeoJSON is expliciet als lichtgewicht oplossing voor eenvoudige toepassingen bedoeld.
-        Een volwaardige JSON-variant van GML is niet binnen GeoJSON mogelijk, maar zou ergens tussen GeoJSON en GML in komen
-        te liggen qua zwaarte en complexiteit. Naast GML als formele standaard kan ook gekeken worden naar alternateven die
-        voor een deel van de toepassingen bruikbaar zijn en aangeboden zouden kunnen worden naast GML. Met name GeoPackage
-        kan voor een aantal toepassingen interessant zijn, aangezien de softwareondersteuning van deze open standaard goed
-        lijkt en deze vorm mogelijk een oplossing biedt voor al die gebruikers die nu om een shape vragen.
+        Daarom houden we nu vast aan GML als uitwisselstandaard (voor ontsluiting zien we lichtere alternatieven). Deze situatie
+        roept de vraag op of Geonovum actief zou moeten inzetten op een goed alternatief, bijvoorbeeld een volwaardige JSON-variant
+        van GML. GeoJSON is expliciet als lichtgewicht oplossing voor eenvoudige toepassingen bedoeld. Een volwaardige JSON-variant
+        van GML is niet binnen GeoJSON mogelijk, maar zou ergens tussen GeoJSON en GML in komen te liggen qua zwaarte en
+        complexiteit. Naast GML als formele standaard kan ook gekeken worden naar alternateven die voor een deel van de toepassingen
+        bruikbaar zijn en aangeboden zouden kunnen worden naast GML. Met name GeoPackage kan voor een aantal toepassingen
+        interessant zijn, aangezien de softwareondersteuning van deze open standaard goed lijkt en deze vorm mogelijk een
+        oplossing biedt voor al die gebruikers die nu om een shape vragen.
       </li>
       <li><em>Linked geo data</em>: uit ervaringen met het opslaan van grote geografische datasets in triple stores blijkt dat
         linked data voor het geodomein nog geen volwassen techniek is. In hoeverre moet Geonovum zich inzetten om dit te
         bevorderen? Om die vraag te beantwoorden, zullen we moeten kijken naar de meerwaarde van de verschillende gradaties
         van linked data voor het geodomein. Want als we vooral begrippen willen kunnen linken en voor elk object op het web
-        met een eigen URI en links tussen de objecten willen hebben; maar niet per sé met RDF, triple stores en SPARQL endpoints,
+        wel een eigen URI en links tussen de objecten willen hebben; maar niet per sé met RDF, triple stores en SPARQL endpoints,
         dan ligt het ambitieniveau meer op "linked data" dan op "Linked Data".</li>
       <li><em>Laten landen best practices</em>: de inzichten uit bijvoorbeeld de W3C <a href="https://www.w3.org/TR/dwbp/">Data on the Web Best
             Practices</a> en OGC / W3C <a href="https://www.w3.org/TR/sdw-bp/">Spatial
             Data on the Web Best Practices</a> zijn zeer waardevol en kunnen in hoge mate bijdragen aan het succes van de
         Nederlandse SDI. Hetzelfde geldt voor bijvoorbeeld API- en URI-richtlijnen. Dergelijke richtlijnen en handreikingen
         hebben niet het karakter van formele standaarden. Daardoor zal Geonovum andere methoden gebruiken om de impact van
-        deze richtlijnen en handreikingen te maximaliseren. Zo valt te denken aan meer kennissessies, publicaties en voorbeeldimplementaties
+        deze richtlijnen en handreikingen te maximaliseren. Zo valt te denken aan meer kennissessies, publicaties, voorbeeldimplementaties
         en etalage-projecten.</li>
     </ul>
   </section>
@@ -524,8 +527,9 @@
         werken we aan de ontwikkeling van nieuwe Nederlandse metadataprofielen o.b.v. de meest recente ISO en INSPIRE eisen,
         aan betere export richting de generieke open data wereld via GeoDCAT-AP en in W3C-verband aan afstemming tussen verschillende
         metadatadomeinen (waaronder ISO, DCAT, CKAN en INSPIRE). Daarnaast willen we in samenwerking met het werkveld gaan
-        verkennen hoe voor de langere termijn een architectuur, gebaseerd op een Linked Data aanpak van metadata, er voor
-        Nederland uit zou kunnen zien. De huidige ideeën rond de Gegevenscatalogus van het DSO vormen hierbij het uitgangspunt.</li>
+        verkennen hoe voor de langere termijn een architectuur, gebaseerd op een Linked Data aanpak van metadata, inclusief
+        de begrippen en definities uit informatiemodellen, er voor Nederland uit zou kunnen zien. De huidige ideeën rond
+        de Gegevenscatalogus van het DSO vormen hierbij het uitgangspunt.</li>
     </ul>
   </section>
 </body>
