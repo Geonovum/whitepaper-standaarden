@@ -270,8 +270,9 @@
         van GML als ketenuitwisselformaat (bijvoorbeeld tussen bronhouders en landelijke voorzieningen) niet ter discussie
         staat. Daar waar lichtere formaten als mogelijke alternatieven worden genoemd, heeft dit eerder betrekking op het
         gebruik van GML bij ontsluiting van de data (zie ook de <a href="https://geonovum.github.io/whitepaper-standaarden/#ontsluiting">sectie Ontsluiting</a>).
-        Met de opkomst van 3D geo-informatie zou het overigens goed denkbaar zijn dat CityGML (als specifieke 3D aanscherping
-        / uitbreiding op GML) toegevoegd zal worden aan de set geostandaarden op de Pas toe of leg uit-lijst. </p>
+        Met de opkomst van 3D geo-informatie zou het overigens goed denkbaar zijn dat CityGML [[citygml20]] (als specifieke
+        3D aanscherping / uitbreiding op GML) toegevoegd zal worden aan de set geostandaarden op de Pas toe of leg uit-lijst.
+      </p>
       <p>Op de wat langere termijn zal het voorgaande statement over de positie van GML zijn geldigheid kunnen verliezen. Bij
         het <a href="http://www.opengeospatial.org">Open
             Geospatial Consortium</a> gaan stemmen op om een GeoJSON-achtige standaard te ontwikkelen die wel aan de eisen
@@ -384,12 +385,13 @@
       <section id="impact-3d">
         <h4>3D</h4>
         <p>Op het punt van ontsluiting van 3D data zullen de standaarden zich nog verder moeten bewijzen. Mogelijk gaan OGC
-          3D portrayal services hier een rol in spelen, aangevuld met (op moment van schrijven nog kandidaat-) OGC Community
-          Standards als 3D Tiling (o.b.v. Cesium) of I3S. De specifieke uitdaging van 3D data schuilt in het datavolume:
-          zowel bij visualisatie- als downloadvoorzieningen moet nadrukkelijk rekening gehouden worden met performance en
-          benodigde geheugencapaciteit en rekenkracht. Downloads zullen voorlopig voornamelijk in CityGML plaatsvinden. Wel
-          zien we een interessante -zij het nog zeer prille- ontwikkeling rond CityJSON: een JSON encoding van het informatiemodel
-          van CityGML.
+          3D portrayal services [[3dps]] hier een rol in spelen, aangevuld met (op moment van schrijven nog kandidaat-) OGC
+          Community Standards als <a href="http://cesiumjs.org/2015/08/10/Introducing-3D-Tiles/">3D Tiling</a> (o.b.v. Cesium)
+          of <a href="http://www.opengeospatial.org/pressroom/pressreleases/2567">I3S</a>. De specifieke uitdaging van 3D
+          data schuilt in het datavolume: zowel bij visualisatie- als downloadvoorzieningen moet nadrukkelijk rekening gehouden
+          worden met performance en benodigde geheugencapaciteit en rekenkracht. Downloads zullen voorlopig voornamelijk
+          in CityGML [[citygml20]] plaatsvinden. Wel zien we een interessante -zij het nog zeer prille- ontwikkeling rond
+          <a href="https://github.com/tudelft3d/cityjson">CityJSON</a>, een JSON encoding van het informatiemodel van CityGML.
         </p>
       </section>
       <section id="impact-linkeddata">
@@ -397,18 +399,19 @@
         <p>Voor de ontsluiting van Linked Data zullen API's een belangrijke rol spelen, maar we zullen ook meer SPARQL endpoints
           gaan zien. Deze endpoints maken het bevragen van Linked Data in RDF-structuur mogelijk. Het tempo waarin dergelijke
           endpoints gemeengoed gaan worden, zal mede afhangen van de snelheid waarmee triple stores gemeengoed worden. Op
-          dit moment zien we bij het werkveld nog geen behoefte aan een Nederlands profiel op GeoSPARQL of aan het toevoegen
+          dit moment zien we bij het werkveld nog geen behoefte aan een Nederlands profiel op [[GeoSPARQL]] of aan het toevoegen
           aan de set Geostandaarden op de Pas toe of leg uit-lijst. </p>
       </section>
       <section id="impact-sensordata">
         <h4>Sensordata</h4>
         <p>Voor het ontsluiten van sensordata zijn op verschillende plaatsen standaarden in ontwikkeling. Zo wordt er gewerkt
-          aan OGC standaarden (SOS, SensorThings API), maar ook aan W3C standaarden (o.a. SSN en Web of Things standaarden).
-          Voor deze standaarden geldt dat ze -voor zover ze voldoende gereed zijn- nog beperkt worden toegepast. Op dit vlak
-          is het daarom nu voor ons nog te vroeg om een uitspraak te doen over de wenselijke richting van standaarden voor
-          het ontsluiten van sensordata. Wel zien we een duidelijke groei in de ontsluiting van data uit Observations and
-          measurements, o.a. ook in INSPIRE context (bathymetrie, hoogte). Hiermee verbreedt het aandachtsgebied van Geonovum.
-          In dit bredere aandachtsgebied zullen we ontwikkelingen actief blijven volgen.</p>
+          aan OGC standaarden ([[SOS]], [[SENSORTHINGS]] API), maar ook aan W3C standaarden (o.a. SSN [[vocab-ssn]] en
+          <a href="https://www.w3.org/WoT/WG/">Web of Things</a> standaarden). Voor deze standaarden geldt dat ze -voor zover
+          ze voldoende gereed zijn- nog beperkt worden toegepast. Op dit vlak is het daarom nu voor ons nog te vroeg om een
+          uitspraak te doen over de wenselijke richting van standaarden voor het ontsluiten van sensordata. Wel zien we een
+          duidelijke groei in de ontsluiting van data uit Observations and measurements, o.a. ook in INSPIRE context (bathymetrie,
+          hoogte). Hiermee verbreedt het aandachtsgebied van Geonovum. In dit bredere aandachtsgebied zullen we ontwikkelingen
+          actief blijven volgen.</p>
       </section>
     </section>
     <section id="vindbaarheid">
