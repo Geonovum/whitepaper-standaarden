@@ -120,5 +120,35 @@ var respecConfig = {
       date: "26 July 2016",
       status: "OpenGIS Implementation Standard",
     },
+    "GeoDCAT-AP": {
+      href: "https://joinup.ec.europa.eu/node/139283/",
+      title:
+        "GeoDCAT-AP: A geospatial extension for the DCAT application profile for data portals in Europe",
+      publisher: "European Commission",
+      date: "23 December 2015",
+    },
+    CSW: {
+      href: "http://www.opengeospatial.org/standards/cat",
+      publisher: "OGC",
+      title: "Catalogue Services 3.0 - General Model",
+      authors: ["Douglas Nebert", "Uwe Voges", "Lorenzo Bigagli"],
+      date: "10 June 2016",
+    },
+    "ISO19115-nl": {
+      href:
+        "https://www.geonovum.nl/wegwijzer/standaarden/nederlands-metadataprofiel-op-iso-19115-geografie-131",
+      publisher: "Geonovum",
+      title: "Nederlands profiel op ISO 19115 voor geografie",
+      authors: [""],
+      date: "September 2013",
+    },
+    "ISO19119-nl": {
+      href:
+        "https://www.geonovum.nl/wegwijzer/standaarden/nederlands-metadataprofiel-op-iso-19119-services-121",
+      publisher: "Geonovum",
+      title: "Nederlands profiel op ISO 19119 voor services",
+      authors: [""],
+      date: "September 2013",
+    },
   },
 };
