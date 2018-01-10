@@ -1,8 +1,10 @@
 var respecConfig = {
   specStatus: "GN-BASIS",
   specType: "HR",
-  pubDomain: "etc",
-  publishDate: "2017-05-31",
+  pubDomain: "wp",
+  publishDate: "2017-12-22",
+  previousPublishDate: "20170531",
+  previousMaturity: "GN-BASIS",
   editors: [
     {
       name: "Friso Penninga",
@@ -16,7 +18,7 @@ var respecConfig = {
     },
   ],
   shortName: "whitepaper-standaarden",
-  subtitle: "Werkversie",
+  subtitle: "Vastgestelde versie",
   github: "https://github.com/Geonovum/whitepaper-standaarden",
   issueBase: "https://github.com/Geonovum/whitepaper-standaarden/issues/",
   localBiblio: {
