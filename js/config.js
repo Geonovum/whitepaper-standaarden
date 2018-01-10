@@ -3,8 +3,6 @@ var respecConfig = {
   specType: "HR",
   pubDomain: "wp",
   publishDate: "2017-12-22",
-  previousPublishDate: "20170531",
-  previousMaturity: "GN-BASIS",
   editors: [
     {
       name: "Friso Penninga",
