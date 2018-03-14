@@ -26,165 +26,50 @@
       zijn inmiddels verwerkt.</p>
   </section>
   <section id="introduction">
-    <h2>Inleiding</h2>
-    <p>Terugkijkend op tien jaar standaarden ontwikkelen en beheren, kunnen we vaststellen dat we in Nederland inmiddels een
-      volwassen set geostandaarden kennen, die fungeert als de ruggengraat van de nationale spatial data infrastructure (SDI).
-      Deze set standaarden is opgenomen op de <a href="https://www.forumstandaardisatie.nl/open-standaarden/lijst/verplicht">Pas toe of leg uit-lijst</a>      van het Forum Standaardisatie. Geonovum beheert -als hoeder van deze ruggengraat- deze set en is van de meeste afzonderlijke
-      standaarden ook de beheerder. De <a href="https://www.forumstandaardisatie.nl/standaard/geo-standaarden">set geostandaarden</a>      bevat het Basismodel Geo-informatie [[NEN3610]], het 'moedermodel' van veel informatiemodellen waarmee semantiek van
-      datasets éénduidig wordt vastgelegd, en een aantal standaarden die vastleggen hoe we deze datasets kunnen uitwisselen
-      [[GML]], ontsluiten (Nederlandse profielen op WMS [[WMS-NL]] en WFS [[WFS-NL]]) en vindbaar maken (Nederlandse metadataprofielen
-      voor geografie [[ISO19115-nl]] en voor services [[ISO19119-nl]]).
-    </p>
-    <p>Hoewel de huidige SDI met de INSPIRE richtlijn, de datasets van geo-basisregistraties, en voorzieningen als PDOK niet
-      meer weg te denken is uit de dagelijkse praktijk van het geo-informatiewerkveld, is een SDI nooit uitontwikkeld. Technologische
-      ontwikkelingen volgen elkaar in hoog tempo op en de maatschappelijke vragen evolueren. Waar de SDI oorspronkelijk alleen
-      op de geo-professional gericht was, verwachten we tegenwoordig dat de SDI toegankelijk wordt voor een veel bredere
-      gebruikersgroep, waaronder de web-ontwikkelaars. Deze beoogde verbreding komt voort uit de toegenomen aandacht voor
-      (her)bruikbaarheid van data, waar oorspronkelijk de focus meer lag op de ontsluiting zelf. Deze verschoven focus zien
-      we nu ook onder de noemer 'van open data naar FAIR data', een concept oorspronkelijk bedacht voor wetenschappelijke
-      (onderzoeks)data. Essentie hiervan: data dient niet alleen open te zijn, maar ook vindbaar, toegankelijk, interoperabel
-      en herbruikbaar. </p>
+    <h2>Introduction</h2>
+    <p>Looking back over ten years of developing and managing standards, we can conclude that, in the Netherlands, we now have a mature set of geo standards which act as backbone of our National Spatial data infrastructure (SDI). This set of standards is listed on the <a href="https://www.forumstandaardisatie.nl/open-standaarden/lijst/verplicht">Comply or Explain list</a> of the Standardisation Forum. Geonovum, as guardian of this backbone, manages this set and is also the manager of most of the individual standards. The <a href="https://www.forumstandaardisatie.nl/standaard/geo-standaarden">set geostandards</a> contains the Basis model Geo-information [[NEN3610]], the 'mother model' of many information models with which the semantics of datasets are captured unequivocally, and a number of standards that define how we can exchange [[GML]] and provide (Dutch profiles on WMS [[WMS-NL]] and WFS [[WFS-NL]]) these datasets, and make these discoverable (Dutch metadata profiles for geography [[ISO19115-nl]] and for services [[ISO19119-nl]]). </p>
+    <p>Even though the current SDI within the INSPIRE directive, the datasets of geo-basis registers, and provisions such as PDOK are really common now in the daily practice of the geo-information field, the development of an SDI never ends. Technological developments are progressing rapidly and societal requirements are evolving. Where the SDI was originally only focused on the geo-professional, nowadays we expect the SDI to be accessible to a much larger group of users, including scientists and web-developers. This intended broadening results from the increased attention given to the (re)usability of data, where originally the focus was more on the unlocking itself. This shifted focus is now also seen under the heading 'from Open data to FAIR data', a concept originally conceived of for scientific (research)data. Essence: data should not only be open, but also be findable, accessible, interoperable and re-usable.</p>
     <figure>
       <img src="media/Schermafbeelding-2016-04-01-om-14.22.46.png" height="250">
       <figcaption>"Fair" open data</figcaption>
     </figure>
-    <p> In de toekomst verwachten we meer samenhang (en consistentie) tussen individuele datasets, meer detail in datasets (overgang
-      van 2D naar 3D), meer datavolume, data die veel frequenter wijzigt of zelfs continu (denk aan sensordata), en vormen
-      van toegang tot data die aansluiten bij de gebruikerswensen van de veel bredere gebruikersgroep van de Nederlandse
-      SDI. </p>
-    <p>De Nederlandse SDI kan alleen succesvol meegaan in deze ontwikkeling, wanneer de onderliggende set standaarden dit afdoende
-      ondersteunt. Daarom stellen we ons in deze white paper de vraag of de huidige set standaarden nog volledig voldoet.
-      In hoeverre zijn innovaties en ontwikkelingen zo volwassen geworden, dat ze weerslag hebben op de standaarden die we
-      nu beheren? Langs de lijn van de geostandaarden die op de Pas toe leg uit-lijst staan, schetsen we welke updates van
-      deze standaarden er de komende 5 jaar mogelijk gaan komen. Input hiervoor komt uit ontwikkelingen die Geonovum de afgelopen
-      jaren heeft verkend en gevolgd in de innovatieplatforms rond 3D, Linked Data, Sensoren en het Web en in internationale
-      context. Op sommige punten kunnen we al aanbevelingen geven, op andere zijn er nog open vragen. </p>
+    <p>In future, we expect more coherence (and consistency) between individual datasets, more detail in the datasets (transition from 2D to 3D), more data volume, data that changes much more frequently or even continuously (think of sensor data), and forms of access to data that correspond with the demands of the users of the much broader user group of the Dutch SDI.</p>
+    <p>The Dutch SDI can only successfully participate in this developments, if the underlying set of standards adequately supports this. This is why we are asking ourselves, in this white paper, whether the current set of standards is still fully compliant. To what extent have innovations and developments become so mature that they have an impact on the standards we are now managing? Following the format of the geo standards listed on the Comply or Explain list, we outline which updates of these standards will be possible over the next 5 years. Input for these updates comes from developments that Geonovum has explored and followed in recent years, in the innovation platforms around 3D, Linked Data, Sensors and the Web and in an international context. On some points we can already make recommendations, in other areas questions still remain.</p>
     <section id="scope">
       <h3>Scope</h3>
-      <p>De scope van deze white paper beperkt zich tot de set geostandaarden die op de Pas toe of leg uit-lijst staat van het
-        Forum Standaardisatie. Deze standaarden vormen gezamenlijk de ruggengraat van de Nederlandse SDI. Door vooruit te
-        kijken naar de ontwikkelingen rond deze set standaarden, schetsen we hiermee automatisch de toekomstige ontwikkelingen
-        van de Nederlandse SDI. Het is overigens goed denkbaar dat over vijf jaar de Nederlandse SDI minder herkenbaar is
-        als afzonderlijke infrastructuur, maar eerder gezien kan worden als de ruimtelijke component van de generieke digitale
-        infrastructuur. </p>
+      <p>The scope of this white paper is limited to the set of geo standards on the Comply or Explain list of the Standardisation Forum. Together these standards form the backbone of the Dutch SDI. By looking ahead to the developments around this set of standards, we automatically outline the future development of the Dutch SDI. However, it is also quite conceivable that, in five years’ time, the Dutch SDI is less recognisable as a separate infrastructure, but will be seen as the spatial component of the generic digital infrastructure.</p>
     </section>
   </section>
   <section id="relevantetrends">
-    <h2>Relevante trends</h2>
+    <h2>Relevant trends</h2>
     <section id="3D">
-      <h3>Meer 3D geo-informatie</h3>
-      <p>Hoewel de steeds realistischer ogende visualisaties, inclusief tools als de Oculus Rift VR bril en de Hololens AR bril
-        tot de verbeelding spreken, schuilt in de opkomst van deze tools niet de belangrijkste reden dat SDI's steeds meer
-        richting 3D gaan. De stap van 2D naar 3D is ook de stap van een grover naar een gedetailleerder model. En die gedetailleerdere
-        modellen zijn steeds harder nodig, omdat de maatschappij steeds gedetailleerdere ruimtelijke vragen stelt, bijvoorbeeld
-        over de fysieke leefomgeving en de kwaliteit daarvan. “Hoeveel geluidsbelasting ondervind ik na realisatie van die
-        nieuwe weg?”, “Zit ik straks met een slagschaduw in mijn tuin, wanneer die windmolen daadwerkelijk geplaatst wordt?”.
-        Tegelijk wordt ook de wereld waarover die vragen worden gesteld, steeds complexer. Om gedetailleerdere vragen over
-        een complexere wereld te kunnen beantwoorden, moeten modellen die werkelijkheid beter benaderen. 3D is daardoor steeds
-        noodzakelijker om antwoorden op maatschappelijke vragen te kunnen geven.</p>
-      <p>Naast de toenemende vraag zien we ook een aantal technologische doorbraken, die het mogelijk maken om tegen acceptabele
-        kosten te voldoen aan die vraag naar actuele 3D modellen. In de komende jaren zullen landsdekkende 3D modellen beschikbaar
-        gaan komen, op een schaalniveau vergelijkbaar met de BGT. De Nederlandse SDI zal dergelijke modellen aan moeten kunnen.</p>
+      <h3>More 3D geo-information</h3>
+      <p>Although the increasingly realistic-looking visualisations, including tools such as the Oculus Rift VR glasses and the Hololens AR glasses, appeal to our imagination, the emergence of these tools is not the main reason that SDIs are moving more and more towards 3D. The move from 2D to 3D is also a move from a rougher to a more detailed model. And these more detailed models are increasingly needed, as society’s demands for more detailed spatial information, for example about the physical living environment and its quality, rises. “How much ‘sound load’ will I experience after the realisation of that new road?”, “Will I have a drop-shadow in my garden when this windmill is actually placed?” At the same time, the world about which these questions are being asked, is becoming increasingly complex. To be able to answer more detailed questions about a more complex world, models should approach that reality better. 3D is, therefore, increasingly necessary to provide answers to those societal questions.</p>
+      <p>In addition to this increasing demand, we also see a number of technological breakthroughs being made, that will make it possible to meet the demand for up-to-date 3D models at reasonable costs. In the coming years, 3D models with nationwide coverage will become available at a scale level comparable to the BGT. The Dutch SDI must be able to deal with such models.</p>
     </section>
     <section id="sensoren">
-      <h3>Meer sensoren</h3>
-      <p>Het gebruik van sensoren in de openbare ruimte neemt een enorme vlucht. Zo spreken de toepassingen voor openbare orde
-        en veiligheid in het Living Lab Stratumseind tot de verbeelding, maar zien we ook tal van toepassingen op milieugebied
-        (o.a. rond het meten van luchtkwaliteit), bereikbaarheid (o.a. rond doorstroming en beschikbare parkeerplekken) en
-        de zelfrijdende auto. Veel toepassingen komen tot stand binnen Smart City-initiatieven of experimenten rond het Internet
-        of Things. Met deze enorme groei in toepassingen, neemt ook het aantal standaardisatie-initiatieven snel toe. Internationale
-        organisaties als <a href="http://www.opengeospatial.org">OGC</a>, <a href="https://www.w3.org">W3C</a>, <a href="https://www.ietf.org">IETF</a>        en <a href="https://www.ieee.org/index.html">IEEE</a> werken allen aan standaarden op dit vlak. Deze standaarden
-        richten zich zowel op het vastleggen van gegevens over sensoren als op het ontsluiten van door de sensoren ingewonnen
-        gegevens.
-      </p>
-      <p>Hoewel het INSPIRE framework voorziet in standaarden voor het ontsluiten van sensordata, zijn er nog nauwelijks concrete
-        toepassingen op dit vlak. In vergelijking met trends op het gebied van 3D en linked data is de sensortrend nieuwer
-        en minder volwassen. Een ontwikkeling die wel duidelijk zichtbaar is en als voorloper van de doorbraak van sensoren
-        gezien kan worden, is het groeiende belang van data uit de categorie Observations and measurements. Door technologische
-        ontwikkelingen rond inwintechnieken groeit het aanbod van coverages, bijvoorbeeld rond hoogte (denk aan AHN) en diepte
-        (bathymetrie). Deze groei zien we in domeinen als hydrografie, meteorologie en de ondergrond. Een andere tendens
-        die we zien rond sensoren is de trend naar lichtere standaarden, mede met het oog op het minimaliseren van dataverkeer
-        (wat zeker bij LoRa van groot belang is) en het maximaliseren van batterijduur van bepaalde sensoren.</p>
+      <h3>More sensors</h3>
+      <p>
+        The use of sensors in public space is really taking off. The applications for public order and security, for example the Stratumseind Living Lab, appeal to the imagination, but we also see many applications in the area of environment, (e.g. measuring air quality), accessibility (including, for example, flow and available parking places) and the self-driving car. Many applications are created within Smart City-initiatives or experiments around the Internet of Things. With this enormous growth in applications, the number of standardisation-initiatives rapidly increases too. International organisations such as  <a href="http://www.opengeospatial.org">OGC</a>, <a href="https://www.w3.org">W3C</a>, <a href="https://www.ietf.org">IETF</a> and <a href="https://www.ieee.org/index.html">IEEE</a> all work on standards in this field. These standards focus on both capturing information about sensors and unlocking information collected by these sensors. </p>
+      <p>Although the INSPIRE framework provides standards for unlocking sensor data, there are hardly any concrete applications in this field. Compared to trends in the field of 3D and linked data, the sensor trend is newer and less mature. One development, however, that is clearly visible, and can be seen as a precursor to the breakthrough of sensors, is the growing relevance of data from the Observations and Measurements category. Through technological developments around retrieval techniques the provision of coverages increases, for example, around altitude (think of AHN - Actual Height model of the Netherlands) and depth (bathymetry). We see this increase in domains such as hydrography, meteorology and the substrate. Another trend we see around sensors is lighter standards, partly with the view to minimising data traffic (which is really important for LoRa) and for maximising the battery life of certain sensors.</p>
     </section>
     <section id="linkeddata">
-      <h3>Meer linked data</h3>
-      <p>In het <a href="http://www.pldn.nl">Platform Linked Data Nederland</a>, voorheen PiLOD, heeft Geonovum de afgelopen
-        vier jaar samen met een actieve community onderzocht wat linked data is, hoe je het toepast, wat je eraan hebt, en
-        hoe je geodata als linked data kunt publiceren en gebruiken. Ook het <a href="https://github.com/Geonovum/geo4web-testbed">#geo4web
-            testbed</a> heeft inzichten hierover opgeleverd. Inmiddels hebben de eerste serieuze Nederlandse geo linked datasets
-        het licht gezien, dankzij het Kadaster (<a href="https://brk.basisregistraties.overheid.nl">Kadastrale
-            percelen (BRK)</a> en <a href="https://brt.basisregistraties.overheid.nl">Topografie
-            (BRT)</a>).</p>
-      <p>Er zal de komende vijf jaar veel (overheids) linked geodata gepubliceerd worden. Naast Nederland hebben onder andere
-        Ierland, Schotland, UK, Vlaanderen, Zwitserland en Finland al linked geodata gepubliceerd of zijn hier mee bezig.
-        Linked data is belangrijk voor het publiceren van overheidsdata op een zo rijk mogelijke manier. Het maakt het mogelijk
-        om de betekenis, de semantiek van de data direct aan de data zelf te koppelen, en om tot op een hoge granulariteit
-        links tussen verschillende datasets te leggen. Kortom, linked data is belangrijk voor semantische interoperabiliteit
-        en data integratie. Het is op dit moment de meest rijke en krachtige manier is om data beschikbaar te stellen. </p>
-      <p>Linked data is op dit moment een niche technologie. Voor het merendeel van de web developers is het te complex. Maar
-        dit zou de komende jaren kunnen veranderen. We zien een ontwikkeling richting het 'web van data' waarbij wel een
-        aantal basisprincipes van linked data wordt overgenomen, maar niet het (complexe) datamodel. Met andere woorden "linked
-        data" is niet per sé "Linked Data": wél elk object op het web met een eigen URI, metadata en links tussen de objecten;
-        maar niet per sé met RDF [[rdf-concepts]], triple stores en SPARQL endpoints.
-      </p>
-      <p>In de zomer van 2017 verscheen de W3C/OGC Spatial Data on the Web Best Practice [[sdw-bp]]. Dit document, waaraan wij
-        mee schreven, gaat niet exclusief over linked data, maar bevat er veel aanbevelingen over uit de huidige praktijk
-        en kan als leidraad dienen voor het publiceren van linked geo data in Nederland. Op een aantal punten is er volgens
-        de Best Practice nog geen duidelijke, goede praktijk te ontwaren. Er moet de komende jaren bijvoorbeeld nog aan gewerkt
-        worden aan een gestandaardiseerde vocabulaire voor geo-data én eentje voor geo-metadata. </p>
-      In het verlengde van linked data ligt het <a href="https://www.w3.org/standards/semanticweb/">semantic web</a>. Langzaam
-      maar zeker werken we hier naar toe. We denken daarbij aan semantische harmonisatie. Zonder de hele geowereld te willen
-      harmoniseren, want dit zou een enorme klus zijn waarvan het praktisch nut niet vaststaat. Wel blijven we gericht, daar
-      waar semantische harmonisatie leidt tot nieuwe mogelijkheden om data te hergebruiken en processen te optimaliseren,
-      linked data principes toepassen om te komen tot een Web van data waarin niet langer overbodig data gekopieerd wordt.
-    </section>
+      <h3>More linked data</h3>
+      <p>In the <a href="http://www.pldn.nl">Platform Linked Data Netherlands</a>, formerly PiLOD, Geonovum, and an active community, has, over the past four years, investigated what linked data is, how to apply it, why it is useful and how you could publish and use geodata as linked data. The <a href="https://github.com/Geonovum/geo4web-testbed">#geo4web</a> testbed has also provided insights into this. Meanwhile, the first serious Dutch geo linked datasets have seen the light of day, thanks to the Dutch Cadastre (<a href="https://brk.basisregistraties.overheid.nl">Cadastral parcels (BRK)</a> and <a href="https://brt.basisregistraties.overheid.nl">small scale Topography (BRT)</a>).</p>
+      <p>In the coming five years, a lot of (government) linked geodata will be published. In addition to the Netherlands, Ireland, Scotland, UK, Flanders, Switzerland and Finland have already published linked geodata or are involved in this. Linked data is important for publishing government data in as rich a way as is practicable. This makes it possible to link the meaning, the semantics of the data, immediately to the data itself, and to establish a high granularity, the links between various datasets. In short, linked data is important for semantic interoperability and data integration. Currently, this is the most rich and powerful way of making data available.</p>
+      <p>Linked data is currently a niche technology. For most of the web developers it is too complex. But this could change over the next few years. We see a development towards the 'web of data' which does inherit some basic principles of linked data, but not the (complex) data model. In other words "linked data" is not necessarily "Linked Data": but any object on the web with its own URI, metadata and links between objects; but not necessarily with RDF [[rdf-concepts]], triple stores and SPARQL endpoints.</p>
+      <p>In the summer of 2017 the W3C/OGC Spatial Data on the Web Best Practice [[sdw-bp]] appeared. This document, to which we also contributed, is not exclusively about linked data, but contains many recommendations about it from the current practice and can serve as a guideline for publishing linked GEO data in the Netherlands. In a number of respects, the Best practice does not yet have clear, good practices. For example, in the coming years, we still need to work on a standardised vocabulary for geo-data and also one for geo-metadata.</p>
+      <p>Linked data is a continuation of <a href="https://www.w3.org/standards/semanticweb/">semantic web</a>. Slowly but surely we work towards this. We are thinking of semantic harmonisation. Without wanting to harmonise the entire geo world, because this would be a huge job and we could not guarantee its practical utility. But we will continue to focus on areas where semantic harmonisation leads to new possibilities to re-use data, and to optimise processes, and to apply linked data principles to reach a Web of data on which no longer redundant data is copied.</p>
+         </section>
     <section id="web">
-      <h3>Meer gebruikers: Geo &amp; World Wide Web</h3>
-      <p>Via de Nederlandse SDI wordt een schat aan geo-informatie ontsloten, die voor het overgrote deel als open data wordt
-        aangeboden. Toch beperkt het gebruik zich nu vaak tot het traditionele werkveld van de geo-informatie, terwijl juist
-        de basisinformatie bruikbaar zou moeten zijn voor een veel bredere groep gebruikers. De intermediair tussen de data-aanbieder
-        en de eindgebruiker is tegenwoordig steeds vaker een webontwikkelaar. Deze webontwikkelaars gebruiken nu echter slechts
-        mondjesmaat de kwalitatief hoogwaardige geo-informatie via de Nederlandse SDI. Veel vaker kiezen ze voor platforms
-        als Google Maps of Open Streetmap. Dit wordt veroorzaakt door een combinatie van factoren: deels komt dit voort uit
-        onbekendheid met het bestaan en de opbouw van geo-informatie, deels uit het gegeven dat geo-informatie slecht vindbaar
-        is via zoekmachines en deels uit het gebruik van specifieke geo-standaarden, die buiten het geo-domein veel onbekender
-        zijn en daardoor een drempel voor web-ontwikkelaars. Uiteindelijk zorgt dit ervoor dat het hergebruik van open data
-        slechts beperkt plaats vindt, waardoor niet het volledige potentieel aan maatschappelijke impact gerealiseerd kan
-        worden. Webontwikkelaars spelen zeker in commerciële en op burgers gerichte toepassingen een belangrijke rol.</p>
-      <p>In een aantal recente initiatieven (o.a. het testbed Spatial data on the web en de gezamenlijke OGC en W3C-werkgroep
-        Spatial data on the web) is gezocht naar mogelijkheden om de doelgroep van de Nederlandse SDI nadrukkelijk te verbreden
-        tot buiten het traditionele geo-informatie domein. De wereld van de webontwikkelaar inclusief de in die wereld gangbare
-        standaarden staat centraal. Oplossingsrichtingen schuilen onder andere in het gebruik van lichtere datastandaarden
-        en het aanbieden van API's, codevoorbeelden en andere coördinaatsystemen. Ook wordt gewerkt aan het verbeteren van
-        de vindbaarheid in zoekmachines. De W3C Data on the Web Best Practices [[dwbp]] en mede door Geonovum geschreven
-        Spatial Data on the Web Best Practices [[sdw-bp]] vormen een goed uitgangspunt. Een ander interessant concept op
-        dit vlak is de in ontwikkeling zijnde Gegevenscatalogus voor het Digitaal Stelsel Omgevingswet (DSO). Die catalogus
-        levert informatie welke gegevens er in het DSO beschikbaar komen en wat die gegevens betekenen (semantiek). Dit doet
-        de catalogus door begrippen en definities te ontsluiten, een overzicht van de datasets te geven, informatiemodellen
-        te publiceren en een overzicht te bieden van producten en diensten die beschikbaar zijn. Deze gegevenscatalogus kan
-        helpen data beter vindbaar te maken voor nieuwe gebruikers: mits de catalogus wordt geïndexeerd door zoekmachines,
-        kunnen gebruikers die via Google of Bing naar data over hoogspanningsmasten zoeken bij BGT data terecht komen, iets
-        dat nu via <a href="https://www.pdok.nl">PDOK</a> of <a href="http://www.nationaalgeoregister.nl">NGR</a> niet zou
-        lukken.
-      </p>
+      <h3>More users: Geo &amp; World Wide Web</h3>
+      <p>A wealth of geo-information is unlocked via the Dutch SDI which is offered for the most part as open data. However the use of this data is often limited to the traditional field of geo-information, although the basis information, in particular, should be usable for a much broader group of users. These days the intermediary between the data provider and the final user is more often than not a web developer. But these web developers currently only use tiny amounts of the high-quality geo-information via the Dutch SDI. They often choose platforms such as Google Maps or Open Streetmap. This is caused by a combination of factors: it is partly due to unfamiliarity with the existence and construction of geo-information, partly because of the fact that geo-information is poorly found by search engines, and partly because of the use of specific geo-standards, which are not very well-known outside the geo domain and thus a threshold for web developers. Ultimately, this ensures that the re-use of open data is only limited, so that the full potential of its social impact cannot be realised. Web developers certainly play an important role in commercial and citizen-orientated applications. </p>
+      <p>In a number of recent initiatives (e.g. the testbed Spatial data on the web and the joint OGC and W3C Working Group - Spatial data on the web) there was a search made for opportunities to broaden the target group of the Dutch SDI beyond its traditional geo-information domain. The world of web developers, including standards that are used in this world, is central here. Directions for solutions include the use of lighter data standards and the provision of APIs, code examples and other coordinate systems. Improving findability in search engines is also being worked on. The W3C Data on the Web Best Practices [[dwbp]] and Spatial Data on the Web Best Practices [[sdw-bp]], which is partly written by Geonovum, are a good place to start. Another interesting concept in this area is the Feature Catalogue of the Digital System Environment and Planning Act, which is now being developed. This catalogue provides information about which data will become available in this Digital System Environment and Planning Act and what this data means (semantics). The catalogue does this by unlocking concepts and definitions, giving an overview of datasets, publishing information models and providing an overview of available products and services. The feature catalogue can help make data easier to find for new users; if the catalogue is indexed by search engines, users who search via Google or Bing for data on high-voltage masts, can access the BGT (large scale topography) data, something that would not work via <a href="https://www.pdok.nl">PDOK</a> or <a href="http://www.nationaalgeoregister.nl">NGR</a>.</p>
     </section>
     <section id="platform">
-      <h3>Meer kanalen: platformgedachte</h3>
-      <p>Alle hierboven beschreven ontwikkelingen roepen wellicht de vraag op of de huidige SDI nog wel zinvol is, en daarmee
-        ook of de onderliggende set standaarden op de Pas toe of leg uit-lijst nog wel zinvol is. Om die vraag te kunnen
-        beantwoorden, is een laatste ontwikkeling zeer relevant om te duiden: de opkomst van het platform. Dataplatformen
-        kenmerken zich door de veelheid aan manieren waarop de data kan worden afgenomen: via downloads, via services, via
-        API's of via SPARQL endpoints. De onderliggende reden voor deze veelheid is de erkenning van het gegeven dat er veel
-        verschillende doelgroepen bestaan, met elk hun eigen toepassingen, die daarom ook elk hun data op een andere manier
-        willen afnemen. De opkomst van platformen illustreert dat er niet langer naar een uniforme <i>one size fits all</i>        aanpak wordt gestreefd, maar naar een <i>multichannel</i> aanpak, meer <i>fit for purpose</i>. Deze doelgroepspecifieke
-        benadering is het gevolg van de focusverschuiving van ontsluiting van data naar (her)bruikbaarheid van data. Overigens
-        kunnen zeker de niet-specialistische gebruikers baat hebben bij platformen die de data ook goed visualiseren, bijvoorbeeld
-        bij het beoordelen van de bruikbaarheid van de data voor de beoogde toepassing.</p>
-      <p> Met de opkomst van platformen, komt ook de vraag naar voren in hoeverre de huidige SDI al als platform beschouwd kan
-        worden. Op dit moment lijkt de SDI primair gericht op de geoprofessional, inclusief standaarden uit de geowereld
-        (OGC). Andere doelgroepen, zoals de webontwikkelaars, worden duidelijk minder goed ondersteund. Een platformbenadering
-        zou passend zijn voor de SDI, waarmee de set standaarden uitgebreid kan worden met standaarden die lichter zijn en
-        beter aansluiten bij de praktijk op het web.
+      <h3>More channels: the platform concept</h3>
+      <p>All the developments described above may raise the question as to whether the current SDI is still meaningful, and therefore also whether the underlying set of standards on the Comply or Explain list is still meaningful. To be able to answer that question, reference must be made to one of the latest developments in the field: the rise of the platform. Data platforms are characterised by the multitude of ways in which data can be collected: via downloads, via services, via APIs or via SPARQL endpoints.  The underlying reason for this multitude is the recognition of the fact that there are many different target groups, each with their own applications, and with their own different way of retrieving their data. The emergence of platforms illustrates that we are no longer striving for a uniform one size fits all approach, but for a multichannel approach, more fit for purpose. This target group-specific approach is the result of the shift of focus from unlocking data to the (re)usability of data. Non-specialist users can also benefit from platforms that visualise the data, for example when assessing the usability of the data for the intended application.</p>
+      <p> With the emergence of platforms, the question also arises as to what extent the current SDI can already be considered as a platform. Currently, the SDI seems to be primarily aimed at the geo professional, including standards from the geo world (OGC). Other target groups, such as web developers, are clearly less supported. A platform approach would be more appropriate for the SDI, so the set of standards can be extended to include lighter standards that better relate to the web-based practice.
       </p>
     </section>
   </section>
