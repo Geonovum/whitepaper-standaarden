@@ -17,8 +17,8 @@ var respecConfig = {
   ],
   shortName: "whitepaper-standaarden",
   subtitle: "Final version",
-  github: "https://github.com/Geonovum/whitepaper-standaarden",
-  issueBase: "https://github.com/Geonovum/whitepaper-standaarden/issues/",
+  github: "https://github.com/Geonovum/whitepaper-standaarden/en",
+  issueBase: "https://github.com/Geonovum/whitepaper-standaarden/en/issues/",
   localBiblio: {
     NEN3610: {
       href: "http://www.nen.nl/web/Normshop/Norm/NEN-36102011-nl.htm",
