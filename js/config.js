@@ -15,7 +15,7 @@ var respecConfig = {
       companyURL: "http://www.geonovum.nl/",
     },
   ],
-  shortName: "whitepaper-standaarden",
+  shortName: "wpgs",
   subtitle: "Vastgestelde versie",
   github: "https://github.com/Geonovum/whitepaper-standaarden",
   issueBase: "https://github.com/Geonovum/whitepaper-standaarden/issues/",
